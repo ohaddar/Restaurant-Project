@@ -1,0 +1,90 @@
+.img-a {
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  padding-bottom: 3%;
+  float: none;
+  font: 500 24px / 30px cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.img-a-photo {
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  padding-bottom: 3%;
+  float: none;
+  font: 500 24px / 30px cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  position: relative;
+}
+.img-a-photo ::after {
+  background: #a97345;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translateX(-50%);
+  content: '';
+  height: 2px;
+  width: 30px;
+}
+.img-a::after {
+  background: #a97345;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translateX(-50%);
+  content: '';
+  height: 2px;
+  width: 30px;
+}
+
+.product-card {
+  margin-bottom: 20px;
+}
+
+.img-details:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  position: inherit;
+  cursor: pointer;
+}
+
+.img-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+#photo-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-self: center;
+  width: 50%;
+}
+
+.img-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  width: 72%;
+}
+.card-img {
+  width: 73%;
+  margin-left: 13%;
+  padding-top: 2%;
+}
+.compo-section {
+  padding: 8%;
+  font-family: monospace;
+  font-size: smaller;
+}

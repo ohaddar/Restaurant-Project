@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins' sans-serif;
+}
+
+body {
+  margin: 0;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+#photo-main,
+#photo-pizza-main,
+#photo-salade-main,
+#photo-pasta-main,
+#photo-dessert-main {
+  background-image: url('../../logic/images/restaurent/restaurant.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#navBar-container {
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  z-index: 10;
+  top: -8vh;
+  animation: slideDown 0.5ms ease-in-out forwards;
+  animation-delay: 0.5ms;
+}
+
+@keyframes slideDown {
+  from {
+    top: -8vh;
+  }
+  to {
+    top: 0;
+  }
+}

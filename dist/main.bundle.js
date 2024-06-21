@@ -2,27 +2,27 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
-  \*****************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/base/base.css":
+/*!*********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/base/base.css ***!
+  \*********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../logic/images/restaurent/restaurant.jpg */ "./src/logic/images/restaurent/restaurant.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../logic/images/restaurent/restaurant.jpg */ "./src/logic/images/restaurent/restaurant.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -36,25 +36,6 @@ html {
 
 body {
   margin: 0;
-}
-#photo-main {
-  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: color;
-  padding-top: 150px;
-  display: flex;
-  flex-direction: column;
-}
-
-#navBar-container {
-  background-color: aquamarine;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8vh;
-  box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 ul,
 li {
@@ -71,23 +52,164 @@ figure {
   padding: 0;
   margin: 0;
 }
-
-#navBar {
+#photo-main,
+#photo-pizza-main,
+#photo-salade-main,
+#photo-pasta-main,
+#photo-dessert-main {
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  padding-top: 150px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
-span {
+
+#navBar-container {
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  z-index: 10;
+  top: -8vh;
+  animation: slideDown 0.5ms ease-in-out forwards;
+  animation-delay: 0.5ms;
+}
+
+@keyframes slideDown {
+  from {
+    top: -8vh;
+  }
+  to {
+    top: 0;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./src/css/base/base.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,SAAS;AACX;AACA;;EAEE,UAAU;EACV,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,SAAS;AACX;AACA;;;;;EAKE,yDAAqE;EACrE,oCAAoC;EACpC,4BAA4B;EAC5B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,4BAA4B;EAC5B,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,gCAAgC;EAChC,WAAW;EACX,SAAS;EACT,+CAA+C;EAC/C,sBAAsB;AACxB;;AAEA;EACE;IACE,SAAS;EACX;EACA;IACE,MAAM;EACR;AACF","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-family: 'Poppins' sans-serif;\n}\n\nbody {\n  margin: 0;\n}\nul,\nli {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\nimg {\n  object-fit: cover;\n}\n\nfigure {\n  padding: 0;\n  margin: 0;\n}\n#photo-main,\n#photo-pizza-main,\n#photo-salade-main,\n#photo-pasta-main,\n#photo-dessert-main {\n  background-image: url('../../logic/images/restaurent/restaurant.jpg');\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 150px;\n  display: flex;\n  flex-direction: column;\n}\n\n#navBar-container {\n  background-color: aquamarine;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 8vh;\n  box-shadow: 0 0 5px rgb(0, 0, 0);\n  z-index: 10;\n  top: -8vh;\n  animation: slideDown 0.5ms ease-in-out forwards;\n  animation-delay: 0.5ms;\n}\n\n@keyframes slideDown {\n  from {\n    top: -8vh;\n  }\n  to {\n    top: 0;\n  }\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/components/button.css":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/components/button.css ***!
+  \*****************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.button {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 5px;
+  background-color: #075f438c;
+  margin-left: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #149c80;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/components/button.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,aAAa;EACb,WAAW;EACX,gBAAgB;EAChB,YAAY;EACZ,kBAAkB;EAClB,2BAA2B;EAC3B,iBAAiB;EACjB,YAAY;EACZ,eAAe;AACjB;AACA;EACE,yBAAyB;AAC3B","sourcesContent":[".button {\n  margin: 5px 0;\n  padding: 10px;\n  width: 100%;\n  max-width: 300px;\n  border: none;\n  border-radius: 5px;\n  background-color: #075f438c;\n  margin-left: 1rem;\n  color: white;\n  cursor: pointer;\n}\n.button:hover {\n  background-color: #149c80;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/components/input.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/components/input.css ***!
+  \****************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 123%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 8rem;
+  margin-top: 0.75rem;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/components/input.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,aAAa;EACb,WAAW;EACX,gBAAgB;EAChB,sBAAsB;EACtB,kBAAkB;EAClB,kBAAkB;EAClB,mBAAmB;AACrB","sourcesContent":[".input {\n  margin-bottom: 10px;\n  padding: 10px;\n  width: 123%;\n  max-width: 300px;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  margin-right: 8rem;\n  margin-top: 0.75rem;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/components/navbarForm.css":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/components/navbarForm.css ***!
+  \*********************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `#text-context {
   font-family: cursive;
   font-size: x-large;
   padding: 4px;
+  text-decoration: none;
+  color: black;
+}
+#text-context :hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
 }
 #nav-icons {
   display: flex;
   justify-content: space-between;
 }
-.card-img {
-  width: 73%;
-  margin-left: 13%;
+#nav-icons :hover {
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 .icon-img {
@@ -95,41 +217,192 @@ span {
   margin: 3px;
   margin-right: 17px;
 }
-.img-details {
+`, "",{"version":3,"sources":["webpack://./src/css/components/navbarForm.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,kBAAkB;EAClB,YAAY;EACZ,qBAAqB;EACrB,YAAY;AACd;AACA;EACE,sBAAsB;EACtB,eAAe;EACf,0BAA0B;EAC1B,WAAW;AACb;AACA;EACE,aAAa;EACb,8BAA8B;AAChC;AACA;EACE,sBAAsB;EACtB,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,kBAAkB;AACpB","sourcesContent":["#text-context {\n  font-family: cursive;\n  font-size: x-large;\n  padding: 4px;\n  text-decoration: none;\n  color: black;\n}\n#text-context :hover {\n  transform: scale(1.03);\n  cursor: pointer;\n  text-decoration: underline;\n  color: blue;\n}\n#nav-icons {\n  display: flex;\n  justify-content: space-between;\n}\n#nav-icons :hover {\n  transform: scale(1.03);\n  cursor: pointer;\n}\n\n.icon-img {\n  width: 2rem;\n  margin: 3px;\n  margin-right: 17px;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/navBr.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/layouts/navBr.css ***!
+  \*************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `#navBar {
+  display: flex;
+  justify-content: space-between;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/layouts/navBr.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,8BAA8B;AAChC","sourcesContent":["#navBar {\n  display: flex;\n  justify-content: space-between;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/page/login.css":
+/*!**********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/page/login.css ***!
+  \**********************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../src/logic/images/restaurent/restaurant.jpg */ "./src/logic/images/restaurent/restaurant.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.login__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+}
+#login-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+#login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: antiquewhite;
-  width: 72%;
-  padding-top: 5%;
-  border-radius: 7px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #877e7e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 165%;
+  align-self: center;
+  margin-top: 40%;
+  margin-left: -27%;
+  overflow: hidden;
 }
-.img-a {
+#input-section {
+  margin-top: 2rem;
+}
+#button-section {
+  display: flex;
+  width: 61%;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/page/login.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,oCAAoC;EACpC,4BAA4B;EAC5B,yDAA4E;AAC9E;AACA;EACE,oCAAoC;EACpC,4BAA4B;EAC5B,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;EACnB,uCAAuC;EACvC,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;AAClB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,UAAU;EACV,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB","sourcesContent":[".login__main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  padding-bottom: 30%;\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');\n}\n#login-container {\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 10%;\n  display: flex;\n  flex-direction: column;\n}\n#login-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #877e7e;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  width: 165%;\n  align-self: center;\n  margin-top: 40%;\n  margin-left: -27%;\n  overflow: hidden;\n}\n#input-section {\n  margin-top: 2rem;\n}\n#button-section {\n  display: flex;\n  width: 61%;\n  margin-left: -1rem;\n  margin-top: 2rem;\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/page/photoPg.css":
+/*!************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/page/photoPg.css ***!
+  \************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.img-a {
   color: rgb(0, 0, 0);
   font-size: larger;
   padding-bottom: 3%;
   float: none;
-  font: 500 24px / 30px 'cursive';
+  font: 500 24px / 30px cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.img-a-photo {
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  padding-bottom: 3%;
+  float: none;
+  font: 500 24px / 30px cursive;
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: top;
   position: relative;
 }
-.content .title a {
-  position: relative;
-}
-.img-details a::after {
+.img-a-photo ::after {
   background: #a97345;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: auto;
-  bottom: 0;
-  margin: 0 auto;
+  left: 50%;
+  bottom: 30%;
+  transform: translateX(-50%);
   content: '';
   height: 2px;
   width: 30px;
-  margin-bottom: 7px;
+}
+.img-a::after {
+  background: #a97345;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  transform: translateX(-50%);
+  content: '';
+  height: 2px;
+  width: 30px;
+}
+
+.product-card {
+  margin-bottom: 20px;
+}
+
+.img-details:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  position: inherit;
+  cursor: pointer;
 }
 
 .img-figure {
@@ -143,129 +416,75 @@ span {
   flex-direction: column;
   padding: 20px;
   align-self: center;
-}
-.product-card {
-}
-
-/*
-* {
-  box-sizing: border-box;
-}
-html {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 50%;
 }
 
-img {
-}
-figure {
-
-}
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}*/
-/*programmation top down | programmtion orienté objet */
-/**body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  width: 100%;
-}
-
-#logPage-div {
-  width: 100%;
-  max-width: 1200px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
+.img-details {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  width: 72%;
 }
+.card-img {
+  width: 73%;
+  margin-left: 13%;
+  padding-top: 2%;
+}
+.compo-section {
+  padding: 8%;
+  font-family: monospace;
+  font-size: smaller;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/page/photoPg.css"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,6BAA6B;EAC7B,qBAAqB;EACrB,yBAAyB;EACzB,mBAAmB;EACnB,kBAAkB;EAClB,gBAAgB;EAChB,oBAAoB;AACtB;AACA;EACE,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,6BAA6B;EAC7B,qBAAqB;EACrB,yBAAyB;EACzB,mBAAmB;EACnB,kBAAkB;AACpB;AACA;EACE,mBAAmB;EACnB,kBAAkB;EAClB,SAAS;EACT,WAAW;EACX,2BAA2B;EAC3B,WAAW;EACX,WAAW;EACX,WAAW;AACb;AACA;EACE,mBAAmB;EACnB,kBAAkB;EAClB,SAAS;EACT,WAAW;EACX,2BAA2B;EAC3B,WAAW;EACX,WAAW;EACX,WAAW;AACb;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,sBAAsB;EACtB,0CAA0C;EAC1C;;wBAEsB;EACtB,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,kBAAkB;AACpB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,aAAa;EACb,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,8BAA8B;EAC9B,UAAU;AACZ;AACA;EACE,UAAU;EACV,gBAAgB;EAChB,eAAe;AACjB;AACA;EACE,WAAW;EACX,sBAAsB;EACtB,kBAAkB;AACpB","sourcesContent":[".img-a {\n  color: rgb(0, 0, 0);\n  font-size: larger;\n  padding-bottom: 3%;\n  float: none;\n  font: 500 24px / 30px cursive;\n  text-decoration: none;\n  text-transform: uppercase;\n  vertical-align: top;\n  position: relative;\n  margin-top: 1rem;\n  margin-bottom: -1rem;\n}\n.img-a-photo {\n  color: rgb(0, 0, 0);\n  font-size: larger;\n  padding-bottom: 3%;\n  float: none;\n  font: 500 24px / 30px cursive;\n  text-decoration: none;\n  text-transform: uppercase;\n  vertical-align: top;\n  position: relative;\n}\n.img-a-photo ::after {\n  background: #a97345;\n  position: absolute;\n  left: 50%;\n  bottom: 30%;\n  transform: translateX(-50%);\n  content: '';\n  height: 2px;\n  width: 30px;\n}\n.img-a::after {\n  background: #a97345;\n  position: absolute;\n  left: 50%;\n  bottom: 30%;\n  transform: translateX(-50%);\n  content: '';\n  height: 2px;\n  width: 30px;\n}\n\n.product-card {\n  margin-bottom: 20px;\n}\n\n.img-details:hover {\n  transform: scale(1.07);\n  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);\n  transition:\n    transform 0.3s ease,\n    box-shadow 0.3s ease;\n  position: inherit;\n  cursor: pointer;\n}\n\n.img-figure {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 10%;\n}\n#photo-section {\n  display: flex;\n  flex-direction: column;\n  padding: 20px;\n  align-self: center;\n  width: 50%;\n}\n\n.img-details {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: antiquewhite;\n  width: 72%;\n}\n.card-img {\n  width: 73%;\n  margin-left: 13%;\n  padding-top: 2%;\n}\n.compo-section {\n  padding: 8%;\n  font-family: monospace;\n  font-size: smaller;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
-#navBar {
-  width: 100%;
-  background-color: #333;
-  padding: 1rem;
-}
-#home-div {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1rem;
-}
-#contact-div {
-  display: flex;
-  margin-right: 1rem;
-}
-#login-div {
-  margin-left: 6rem;
-}
-#home-div,
-#contact-div,
-#login-div {
-  font-size: larger;
-}
-#login-container {
-  width: 100%;
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-input {
-  width: 20rem;
-  height: 4rem;
-  border-color: black;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 1rem;
-}
 
-#button-section {
-  display: flex;
-  padding: 1rem;
-}
-#input-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 10rem;
-}
-button {
-  padding: 0.75rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
+/***/ }),
 
-  background-color: #613fb1;
-  cursor: pointer;
-  width: 40%;
-}
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*****************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-button:hover {
-  background-color: #4b2f8b;
-}
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_base_base_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./base/base.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/base/base.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_button_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/button.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/components/button.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_input_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/input.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/components/input.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_navbarForm_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/navbarForm.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/components/navbarForm.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_layouts_navBr_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./layouts/navBr.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/navBr.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_login_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/login.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/login.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/photoPg.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/photoPg.css");
+// Imports
 
-#reset-button {
-  margin-left: 3rem;
-}
-#submit-button {
-  margin-right: 2rem;
-}*/
 
-/*\${jhjh}:interpolation
-img {
-}*/
-`, "",{"version":3,"sources":["webpack://./src/css/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,SAAS;AACX;AACA;EACE,yDAAkE;EAClE,oCAAoC;EACpC,4BAA4B;EAC5B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,4BAA4B;;EAE5B,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,gCAAgC;AAClC;AACA;;EAEE,UAAU;EACV,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,SAAS;AACX;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;AACA;EACE,oBAAoB;EACpB,kBAAkB;EAClB,YAAY;AACd;AACA;EACE,aAAa;EACb,8BAA8B;AAChC;AACA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,WAAW;EACX,kBAAkB;AACpB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,8BAA8B;EAC9B,UAAU;EACV,eAAe;EACf,kBAAkB;AACpB;AACA;EACE,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,+BAA+B;EAC/B,qBAAqB;EACrB,yBAAyB;EACzB,mBAAmB;EACnB,kBAAkB;AACpB;AACA;EACE,kBAAkB;AACpB;AACA;EACE,mBAAmB;EACnB,kBAAkB;EAClB,OAAO;EACP,QAAQ;EACR,SAAS;EACT,SAAS;EACT,cAAc;EACd,WAAW;EACX,WAAW;EACX,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,kBAAkB;AACpB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,aAAa;EACb,kBAAkB;AACpB;AACA;AACA;;AAEA;;;;;;;;;;;;;;;;;;EAkBE;AACF,uDAAuD;AACvD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA6FE;;AAEF;;EAEE","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-family: 'Poppins' sans-serif;\n}\n\nbody {\n  margin: 0;\n}\n#photo-main {\n  background-image: url('../logic/images/restaurent/restaurant.jpg');\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 150px;\n  display: flex;\n  flex-direction: column;\n}\n\n#navBar-container {\n  background-color: aquamarine;\n\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 8vh;\n  box-shadow: 0 0 5px rgb(0, 0, 0);\n}\nul,\nli {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\nimg {\n  object-fit: cover;\n}\n\nfigure {\n  padding: 0;\n  margin: 0;\n}\n\n#navBar {\n  display: flex;\n  justify-content: space-between;\n}\nspan {\n  font-family: cursive;\n  font-size: x-large;\n  padding: 4px;\n}\n#nav-icons {\n  display: flex;\n  justify-content: space-between;\n}\n.card-img {\n  width: 73%;\n  margin-left: 13%;\n}\n\n.icon-img {\n  width: 2rem;\n  margin: 3px;\n  margin-right: 17px;\n}\n.img-details {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: antiquewhite;\n  width: 72%;\n  padding-top: 5%;\n  border-radius: 7px;\n}\n.img-a {\n  color: rgb(0, 0, 0);\n  font-size: larger;\n  padding-bottom: 3%;\n  float: none;\n  font: 500 24px / 30px 'cursive';\n  text-decoration: none;\n  text-transform: uppercase;\n  vertical-align: top;\n  position: relative;\n}\n.content .title a {\n  position: relative;\n}\n.img-details a::after {\n  background: #a97345;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: auto;\n  bottom: 0;\n  margin: 0 auto;\n  content: '';\n  height: 2px;\n  width: 30px;\n  margin-bottom: 7px;\n}\n\n.img-figure {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 10%;\n}\n#photo-section {\n  display: flex;\n  flex-direction: column;\n  padding: 20px;\n  align-self: center;\n}\n.product-card {\n}\n\n/*\n* {\n  box-sizing: border-box;\n}\nhtml {\n  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;\n}\n\nimg {\n}\nfigure {\n\n}\nul,\nli {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}*/\n/*programmation top down | programmtion orienté objet */\n/**body {\n  margin: 0;\n  padding: 0;\n  font-family: Arial, sans-serif;\n  background-color: #f4f4f4;\n  width: 100%;\n}\n\n#logPage-div {\n  width: 100%;\n  max-width: 1200px;\n  background-color: #fff;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  border-radius: 8px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n}\n\n#navBar {\n  width: 100%;\n  background-color: #333;\n  padding: 1rem;\n}\n#home-div {\n  display: flex;\n  justify-content: space-between;\n  margin-left: 1rem;\n}\n#contact-div {\n  display: flex;\n  margin-right: 1rem;\n}\n#login-div {\n  margin-left: 6rem;\n}\n#home-div,\n#contact-div,\n#login-div {\n  font-size: larger;\n}\n#login-container {\n  width: 100%;\n  max-width: 400px;\n  margin: 2rem auto;\n  padding: 2rem;\n  background-color: #f9f9f9;\n  border-radius: 5px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\ninput {\n  width: 20rem;\n  height: 4rem;\n  border-color: black;\n  margin-bottom: 1rem;\n  padding: 1rem;\n  border: 1px solid #ccc;\n  border-radius: 1rem;\n}\n\n#button-section {\n  display: flex;\n  padding: 1rem;\n}\n#input-section {\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  height: 10rem;\n}\nbutton {\n  padding: 0.75rem;\n  border: none;\n  border-radius: 5px;\n  background-color: #333;\n  color: #fff;\n  font-weight: bold;\n  cursor: pointer;\n\n  background-color: #613fb1;\n  cursor: pointer;\n  width: 40%;\n}\n\nbutton:hover {\n  background-color: #4b2f8b;\n}\n\n#reset-button {\n  margin-left: 3rem;\n}\n#submit-button {\n  margin-right: 2rem;\n}*/\n\n/*${jhjh}:interpolation\nimg {\n}*/\n"],"sourceRoot":""}]);
+
+
+
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_base_base_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_button_css__WEBPACK_IMPORTED_MODULE_3__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_input_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_navbarForm_css__WEBPACK_IMPORTED_MODULE_5__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_layouts_navBr_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_login_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `
+`, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -745,6 +964,107 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/logic/DessertDisplayLogic.ts":
+/*!******************************************!*\
+  !*** ./src/logic/DessertDisplayLogic.ts ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DessertDisplayLogic: () => (/* binding */ DessertDisplayLogic)
+/* harmony export */ });
+/* harmony import */ var _logic_images_desserts_cake_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../logic/images/desserts/cake.jpg */ "./src/logic/images/desserts/cake.jpg");
+/* harmony import */ var _logic_images_desserts_cheesecacke_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../logic/images/desserts/cheesecacke.jpg */ "./src/logic/images/desserts/cheesecacke.jpg");
+/* harmony import */ var _logic_images_desserts_dessert_choco_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../logic/images/desserts/dessert-choco.jpg */ "./src/logic/images/desserts/dessert-choco.jpg");
+/* harmony import */ var _logic_images_desserts_pancakes_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../logic/images/desserts/pancakes.jpg */ "./src/logic/images/desserts/pancakes.jpg");
+/* harmony import */ var _logic_images_desserts_tiramisu_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../logic/images/desserts/tiramisu.jpg */ "./src/logic/images/desserts/tiramisu.jpg");
+/* harmony import */ var _logic_images_desserts_coffe_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../logic/images/desserts/coffe.jpg */ "./src/logic/images/desserts/coffe.jpg");
+/* harmony import */ var _logic_images_desserts_jus_de_fraise_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../logic/images/desserts/jus-de-fraise.jpg */ "./src/logic/images/desserts/jus-de-fraise.jpg");
+/* harmony import */ var _logic_images_desserts_orange_juice_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../logic/images/desserts/orange-juice.jpg */ "./src/logic/images/desserts/orange-juice.jpg");
+/* harmony import */ var _ts_components_dessertPageForm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ts/components/dessertPageForm */ "./src/ts/components/dessertPageForm.ts");
+
+
+
+
+
+
+
+
+
+class DessertDisplayLogic {
+    constructor() {
+        this.PhDessData = {
+            id: 'PhoTo',
+            dessertPhotos: [
+                {
+                    id: 'photo1',
+                    name: 'Cake',
+                    type: 'landscape',
+                    src: _logic_images_desserts_cake_jpg__WEBPACK_IMPORTED_MODULE_0__,
+                    composition: 'Gâteau moelleux au chocolat avec glaçage miroir au chocolat.',
+                },
+                {
+                    id: 'photo2',
+                    name: 'Cheesecake',
+                    type: 'portrait',
+                    src: _logic_images_desserts_cheesecacke_jpg__WEBPACK_IMPORTED_MODULE_1__,
+                    composition: 'Au spéculoos et servi avec un coulis de fraise',
+                },
+                {
+                    id: 'photo3',
+                    name: 'choco-Dessert',
+                    type: 'landscape',
+                    src: _logic_images_desserts_dessert_choco_jpg__WEBPACK_IMPORTED_MODULE_2__,
+                    composition: 'Crème vanillée, crème noisette, fraises fraîches avec des biscuits Oreo.',
+                },
+                {
+                    id: 'photo1',
+                    name: 'tiramisu',
+                    type: 'landscape',
+                    src: _logic_images_desserts_tiramisu_jpg__WEBPACK_IMPORTED_MODULE_4__,
+                    composition: 'Crème de mascarpone, biscuits cuillère, café, liqueur, crème et cacao.',
+                },
+                {
+                    id: 'photo3',
+                    name: 'pancake',
+                    type: 'landscape',
+                    src: _logic_images_desserts_pancakes_jpg__WEBPACK_IMPORTED_MODULE_3__,
+                    composition: '',
+                },
+                {
+                    id: 'photo2',
+                    name: 'Coffe',
+                    type: 'portrait',
+                    src: _logic_images_desserts_coffe_jpg__WEBPACK_IMPORTED_MODULE_5__,
+                    composition: '',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Jus de Fraise',
+                    type: 'landscape',
+                    src: _logic_images_desserts_jus_de_fraise_jpg__WEBPACK_IMPORTED_MODULE_6__,
+                    composition: '',
+                },
+                {
+                    id: 'photo3',
+                    name: "Jus d'ornage",
+                    type: 'landscape',
+                    src: _logic_images_desserts_orange_juice_jpg__WEBPACK_IMPORTED_MODULE_7__,
+                    composition: '',
+                },
+            ],
+        };
+        const photoDessertMain = document.getElementById('photo-dessert-main');
+        if (photoDessertMain) {
+            photoDessertMain.innerHTML = (0,_ts_components_dessertPageForm__WEBPACK_IMPORTED_MODULE_8__["default"])([this.PhDessData]);
+        }
+    }
+}
+
+
+/***/ }),
+
 /***/ "./src/logic/LoginBusinessLogic.ts":
 /*!*****************************************!*\
   !*** ./src/logic/LoginBusinessLogic.ts ***!
@@ -852,7 +1172,80 @@ class LoginBusinessLogic {
         }
     }
 }
-/** */
+
+
+/***/ }),
+
+/***/ "./src/logic/PastaDisplayLogic.ts":
+/*!****************************************!*\
+  !*** ./src/logic/PastaDisplayLogic.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PastaDisplayLogic: () => (/* binding */ PastaDisplayLogic)
+/* harmony export */ });
+/* harmony import */ var _logic_images_pasta_pasta_3_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../logic/images/pasta/pasta 3.jpg */ "./src/logic/images/pasta/pasta 3.jpg");
+/* harmony import */ var _logic_images_pasta_pasta_fruit_de_mer_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../logic/images/pasta/pasta-fruit-de-mer.jpg */ "./src/logic/images/pasta/pasta-fruit-de-mer.jpg");
+/* harmony import */ var _logic_images_pasta_pasta_jemjembre_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../logic/images/pasta/pasta-jemjembre.jpg */ "./src/logic/images/pasta/pasta-jemjembre.jpg");
+/* harmony import */ var _logic_images_pasta_pasta_red_sauce_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../logic/images/pasta/pasta-red-sauce.jpg */ "./src/logic/images/pasta/pasta-red-sauce.jpg");
+/* harmony import */ var _logic_images_pasta_pasta_saumon_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../logic/images/pasta/pasta-saumon.jpg */ "./src/logic/images/pasta/pasta-saumon.jpg");
+/* harmony import */ var _ts_components_pastaPageForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ts/components/pastaPageForm */ "./src/ts/components/pastaPageForm.ts");
+
+
+
+
+
+
+class PastaDisplayLogic {
+    constructor() {
+        this.PhPasData = {
+            id: 'PhoTo',
+            pastaPhotos: [
+                {
+                    id: 'photo1',
+                    name: 'Pasta Sauce Blanche',
+                    type: 'landscape',
+                    src: _logic_images_pasta_pasta_3_jpg__WEBPACK_IMPORTED_MODULE_0__,
+                    composition: 'Lardons, oignons, sauce crémeuse, œuf, fromage italien, persil.',
+                },
+                {
+                    id: 'photo2',
+                    name: 'Pasta Fruit De Mer',
+                    type: 'portrait',
+                    src: _logic_images_pasta_pasta_fruit_de_mer_jpg__WEBPACK_IMPORTED_MODULE_1__,
+                    composition: 'Crevettes, oignons, courgettes, piments, citron, tomates cerises, sauce crémeuse au pesto.',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pasta jemjembre',
+                    type: 'landscape',
+                    src: _logic_images_pasta_pasta_jemjembre_jpg__WEBPACK_IMPORTED_MODULE_2__,
+                    composition: 'Bœuf, oignons, céleri, sauce italienne.',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pasta Red Sauce',
+                    type: 'landscape',
+                    src: _logic_images_pasta_pasta_red_sauce_jpg__WEBPACK_IMPORTED_MODULE_3__,
+                    composition: 'Sauce tomate, oignons balsamique et tomates cerises.',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pasta Saumon',
+                    type: 'landscape',
+                    src: _logic_images_pasta_pasta_saumon_jpg__WEBPACK_IMPORTED_MODULE_4__,
+                    composition: 'Crevettes, saumon, pesto, crème, oignons, tomates cerises, muscade, fromage italien, pousses d’épinards, citron.',
+                },
+            ],
+        };
+        const photoPastaMain = document.getElementById('photo-pasta-main');
+        if (photoPastaMain) {
+            photoPastaMain.innerHTML = (0,_ts_components_pastaPageForm__WEBPACK_IMPORTED_MODULE_5__["default"])([this.PhPasData]);
+        }
+    }
+}
 
 
 /***/ }),
@@ -883,26 +1276,26 @@ class PhotoDisplayLogic {
             id: 'PhoTo',
             allPhotos: [
                 {
-                    id: 'photo1',
+                    id: 'pizza',
                     name: 'Pizza',
                     type: 'landscape',
                     src: _images_pizza_pizza_au_feu_de_bois_jpg__WEBPACK_IMPORTED_MODULE_1__,
                 },
                 {
-                    id: 'photo2',
+                    id: 'pasta',
                     name: 'Pasta',
                     type: 'portrait',
                     src: _images_pasta_pasta_3_jpg__WEBPACK_IMPORTED_MODULE_2__,
                 },
                 {
-                    id: 'photo3',
+                    id: 'salade',
                     name: 'Salade',
                     type: 'landscape',
                     src: _images_salade_salad_1_jpg__WEBPACK_IMPORTED_MODULE_3__,
                 },
                 {
-                    id: 'photo3',
-                    name: 'Desserts',
+                    id: 'dessert',
+                    name: 'Dessert',
                     type: 'landscape',
                     src: _images_desserts_strawberry_dessert_jpg__WEBPACK_IMPORTED_MODULE_4__,
                 },
@@ -913,6 +1306,171 @@ class PhotoDisplayLogic {
             photoMain.innerHTML = (0,_ts_components_photoPageForm__WEBPACK_IMPORTED_MODULE_0__["default"])([this.PhData]);
         }
     }
+}
+
+
+/***/ }),
+
+/***/ "./src/logic/PizzaDisplayLogic.ts":
+/*!****************************************!*\
+  !*** ./src/logic/PizzaDisplayLogic.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PizzaDisplayLogic: () => (/* binding */ PizzaDisplayLogic)
+/* harmony export */ });
+/* harmony import */ var _images_pizza_pizza_margaritta_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/pizza/pizza-margaritta.jpg */ "./src/logic/images/pizza/pizza-margaritta.jpg");
+/* harmony import */ var _images_pizza_pizza_feuillejpg_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/pizza/pizza-feuillejpg.jpg */ "./src/logic/images/pizza/pizza-feuillejpg.jpg");
+/* harmony import */ var _images_pizza_pizza_Al_Tonno_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/pizza/pizza-Al -Tonno.jpg */ "./src/logic/images/pizza/pizza-Al -Tonno.jpg");
+/* harmony import */ var _images_pizza_pizza_pepperoni_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/pizza/pizza-pepperoni.jpg */ "./src/logic/images/pizza/pizza-pepperoni.jpg");
+/* harmony import */ var _images_pizza_pizza_piment_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/pizza/pizza-piment.jpg */ "./src/logic/images/pizza/pizza-piment.jpg");
+/* harmony import */ var _images_pizza_pizza_red_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/pizza/pizza-red.jpg */ "./src/logic/images/pizza/pizza-red.jpg");
+/* harmony import */ var _ts_components_pizzaPageForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ts/components/pizzaPageForm */ "./src/ts/components/pizzaPageForm.ts");
+
+
+
+
+
+
+
+class PizzaDisplayLogic {
+    constructor() {
+        this.PhPizData = {
+            id: 'PhoTo',
+            pizzaPhotos: [
+                {
+                    id: 'photo1',
+                    name: 'Pizza Margaritta',
+                    type: 'landscape',
+                    src: _images_pizza_pizza_margaritta_jpg__WEBPACK_IMPORTED_MODULE_0__,
+                    composition: 'Sauce Tomate, Mozzarella, Basilic',
+                },
+                {
+                    id: 'photo2',
+                    name: 'Pizza Feuille',
+                    type: 'portrait',
+                    src: _images_pizza_pizza_feuillejpg_jpg__WEBPACK_IMPORTED_MODULE_1__,
+                    composition: 'Sauce Tomate, Mozzarella, Basilic',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pizza Al Tonno',
+                    type: 'landscape',
+                    src: _images_pizza_pizza_Al_Tonno_jpg__WEBPACK_IMPORTED_MODULE_2__,
+                    composition: 'Sauce Tomate, Mozzarella, Basilic, Thon',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pizza Pepperoni',
+                    type: 'landscape',
+                    src: _images_pizza_pizza_pepperoni_jpg__WEBPACK_IMPORTED_MODULE_3__,
+                    composition: 'Sauce Tomate, Mozzarella, Basilic, Pepperoni',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pizza Piment',
+                    type: 'landscape',
+                    src: _images_pizza_pizza_piment_jpg__WEBPACK_IMPORTED_MODULE_4__,
+                    composition: 'Sauce Tomate, Mozzarella, Basilic, Piment, Ongion',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Pizza Red',
+                    type: 'landscape',
+                    src: _images_pizza_pizza_red_jpg__WEBPACK_IMPORTED_MODULE_5__,
+                    composition: 'Sauce Tomate, Mozzarella, Basilic, Tomate Sechée, Ongion',
+                },
+            ],
+        };
+        const photoPizzaMain = document.getElementById('photo-pizza-main');
+        if (photoPizzaMain) {
+            photoPizzaMain.innerHTML = (0,_ts_components_pizzaPageForm__WEBPACK_IMPORTED_MODULE_6__["default"])([this.PhPizData]);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/logic/SaladeDisplayLogic.ts":
+/*!*****************************************!*\
+  !*** ./src/logic/SaladeDisplayLogic.ts ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SaladeDisplayLogic: () => (/* binding */ SaladeDisplayLogic)
+/* harmony export */ });
+/* harmony import */ var _images_salade_salad_2jpg_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/salade/salad-2jpg.jpg */ "./src/logic/images/salade/salad-2jpg.jpg");
+/* harmony import */ var _images_salade_salad_3jpg_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/salade/salad-3jpg.jpg */ "./src/logic/images/salade/salad-3jpg.jpg");
+/* harmony import */ var _images_salade_salade_1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/salade/salade-1.jpg */ "./src/logic/images/salade/salade-1.jpg");
+/* harmony import */ var _images_salade_papaya_salad_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/salade/papaya-salad.jpg */ "./src/logic/images/salade/papaya-salad.jpg");
+/* harmony import */ var _ts_components_saladePageForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ts/components/saladePageForm */ "./src/ts/components/saladePageForm.ts");
+
+
+
+
+
+class SaladeDisplayLogic {
+    constructor() {
+        this.PhSalData = {
+            id: 'PhoTo',
+            saladePhotos: [
+                {
+                    id: 'photo1',
+                    name: 'Salade',
+                    type: 'landscape',
+                    src: _images_salade_salad_2jpg_jpg__WEBPACK_IMPORTED_MODULE_0__,
+                    composition: 'Laitue romaine, croûtons maison, fromage italien et poulet.	',
+                },
+                {
+                    id: 'photo2',
+                    name: 'Salade',
+                    type: 'portrait',
+                    src: _images_salade_salad_3jpg_jpg__WEBPACK_IMPORTED_MODULE_1__,
+                    composition: 'Mélange de salades, feta, concombre, tomates cerises, olives noires, câpres et oignons rouges.',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Salade',
+                    type: 'landscape',
+                    src: _images_salade_salade_1_jpg__WEBPACK_IMPORTED_MODULE_2__,
+                    composition: 'Mélange de salades, thon, olives noires, tomates cerises, oignons verts et rouges, pois gourmands, pommes de terre et œuf dur.',
+                },
+                {
+                    id: 'photo3',
+                    name: 'Papaya Salade',
+                    type: 'landscape',
+                    src: _images_salade_papaya_salad_jpg__WEBPACK_IMPORTED_MODULE_3__,
+                    composition: 'Mélange de salades, carottes et tomates cerises avec notre vinaigrette balsamique.',
+                },
+            ],
+        };
+        const photoSaladeMain = document.getElementById('photo-salade-main');
+        if (photoSaladeMain) {
+            photoSaladeMain.innerHTML = (0,_ts_components_saladePageForm__WEBPACK_IMPORTED_MODULE_4__["default"])([this.PhSalData]);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./src/pages/dessertUI.ts":
+/*!********************************!*\
+  !*** ./src/pages/dessertUI.ts ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ dessertUI)
+/* harmony export */ });
+function dessertUI() {
+    return ` <section class="photo__dessert__main" id="photo-dessert-main"></section>`;
 }
 
 
@@ -952,6 +1510,23 @@ function navBarUI() {
 
 /***/ }),
 
+/***/ "./src/pages/pastaUI.ts":
+/*!******************************!*\
+  !*** ./src/pages/pastaUI.ts ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ pastaUI)
+/* harmony export */ });
+function pastaUI() {
+    return ` <section class="photo__pasta__main" id="photo-pasta-main"></section>`;
+}
+
+
+/***/ }),
+
 /***/ "./src/pages/photoUI.ts":
 /*!******************************!*\
   !*** ./src/pages/photoUI.ts ***!
@@ -963,7 +1538,74 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ photoUI)
 /* harmony export */ });
 function photoUI() {
-    return ` <section class="photo__main" id="photo-main"></section>`;
+    return `<section class="photo__main" id="photo-main"></section> `;
+}
+
+
+/***/ }),
+
+/***/ "./src/pages/pizzaUI.ts":
+/*!******************************!*\
+  !*** ./src/pages/pizzaUI.ts ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ pizzaUI)
+/* harmony export */ });
+function pizzaUI() {
+    return ` <section class="photo__pizza__main" id="photo-pizza-main"></section>`;
+}
+
+
+/***/ }),
+
+/***/ "./src/pages/saladeUI.ts":
+/*!*******************************!*\
+  !*** ./src/pages/saladeUI.ts ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ saladeUI)
+/* harmony export */ });
+function saladeUI() {
+    return ` <section class="photo__salade__main" id="photo-salade-main"></section>`;
+}
+
+
+/***/ }),
+
+/***/ "./src/ts/components/dessertPageForm.ts":
+/*!**********************************************!*\
+  !*** ./src/ts/components/dessertPageForm.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ dessertPageForm)
+/* harmony export */ });
+function dessertPageForm(PhDessData) {
+    const renderPhotos = (photo) => `<article class="product-card">
+      <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
+        <section class="img-details">
+          <a href="/" class="img-a1" onclick="event.preventDefault();  window.onNavigate('#Login')">
+            <img src="${photo.src}" alt="${photo.name}" class="card-img">
+            <a href="/" class="img-a">${photo.name}</a>
+            <section class="compo-section">${photo.composition}<section/>
+
+          </a>
+        </section>
+      </figure>
+    </article>`;
+    const photoToRender = PhDessData[0].dessertPhotos
+        ? PhDessData[0].dessertPhotos.map(renderPhotos).join('')
+        : '';
+    return `
+  <section id="photo-section">${photoToRender}</section>`;
 }
 
 
@@ -982,11 +1624,11 @@ __webpack_require__.r(__webpack_exports__);
 function form(data) {
     const renderInput = (el) => `
     <div class="form-group">
-      <input id="${el.id}" name="${el.name}" type="${el.type}" placeholder="${el.placeholder || ''}" />
+      <input id="${el.id}" name="${el.name}" type="${el.type}" placeholder="${el.placeholder || ''}" class="input"/>
     </div>
   `;
     const renderButton = (el) => `
-    <button id="${el.id || ''}" name="${el.name}" type="${el.type}">${el.textContent}</button>
+    <button id="${el.id || ''}" name="${el.name}" type="${el.type}" class="button">${el.textContent}</button>
   `;
     const inputs = data.inputs ? data.inputs.map(renderInput).join('') : '';
     const buttons = data.buttons ? data.buttons.map(renderButton).join('') : '';
@@ -1020,14 +1662,14 @@ __webpack_require__.r(__webpack_exports__);
 function navBarForm(navBarData) {
     const renderNavBar = (el) => {
         if (el.textContent) {
-            return `<span>${el.textContent}</span>`;
+            return `<a id="text-context" href="/"  onclick="event.preventDefault();  window.onNavigate('#Accueil')">${el.textContent}</a>`;
         }
         return '';
     };
     const renderNavBarWithSrc = (el) => {
         if (el.src) {
             return `
-      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img"></a>
+      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img" onclick="event.preventDefault();  window.onNavigate('#Login')"></a>
       `;
         }
         return '';
@@ -1049,6 +1691,39 @@ function navBarForm(navBarData) {
 
 /***/ }),
 
+/***/ "./src/ts/components/pastaPageForm.ts":
+/*!********************************************!*\
+  !*** ./src/ts/components/pastaPageForm.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ pastaPageForm)
+/* harmony export */ });
+function pastaPageForm(PhPasData) {
+    const renderPhotos = (photo) => `<article class="product-card">
+      <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
+        <section class="img-details">
+          <a href="/" class="img-a1" onclick="event.preventDefault();  window.onNavigate('#Login')">
+            <img src="${photo.src}" alt="${photo.name}" class="card-img">
+            <a href="/" class="img-a">${photo.name}</a>
+            <section  class="compo-section">${photo.composition}<section/>
+
+          </a>
+        </section>
+      </figure>
+    </article>`;
+    const photoToRender = PhPasData[0].pastaPhotos
+        ? PhPasData[0].pastaPhotos.map(renderPhotos).join('')
+        : '';
+    return `
+  <section id="photo-section">${photoToRender}</section>`;
+}
+
+
+/***/ }),
+
 /***/ "./src/ts/components/photoPageForm.ts":
 /*!********************************************!*\
   !*** ./src/ts/components/photoPageForm.ts ***!
@@ -1060,16 +1735,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ photoPageForm)
 /* harmony export */ });
 function photoPageForm(PhData) {
-    const renderPhotos = (photo) => `<article class="product-card">
+    const renderPhotos = (photo) => {
+        if (!photo.id) {
+            throw new Error('photo.id is undefined');
+        }
+        const capitalizedPhotoId = photo.id.charAt(0).toUpperCase() + photo.id.slice(1);
+        return `<article class="product-card">
       <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
-      <section class="img-details">
-      <a href="/" class="img-a1">
-      <img src="${photo.src}" alt="${photo.name}" class="card-img">
-          <a href="/" class="img-a">${photo.name}</a>
+        <section class="img-details">
+          <a  class="img-a1" id="${photo.id}" onclick="event.preventDefault();  window.onNavigate('#${capitalizedPhotoId}')">
+            <img src="${photo.src}" alt="${photo.name}" class="card-img">
+            <a  class="img-a-photo" onclick="event.preventDefault();  window.onNavigate('#${capitalizedPhotoId}')">${photo.name}</a>
           </a>
         </section>
       </figure>
     </article>`;
+    };
     const photoToRender = PhData[0].allPhotos
         ? PhData[0].allPhotos.map(renderPhotos).join('')
         : '';
@@ -1080,6 +1761,141 @@ function photoPageForm(PhData) {
 
 /***/ }),
 
+/***/ "./src/ts/components/pizzaPageForm.ts":
+/*!********************************************!*\
+  !*** ./src/ts/components/pizzaPageForm.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ pizzaPageForm)
+/* harmony export */ });
+function pizzaPageForm(PhPizData) {
+    const renderPhotos = (photo) => `<article class="product-card">
+      <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
+        <section class="img-details">
+          <a href="/" class="img-a1" onclick="event.preventDefault();  window.onNavigate('#Login')">
+            <img src="${photo.src}" alt="${photo.name}" class="card-img">
+            <a href="/" class="img-a">${photo.name}</a>
+            <section  class="compo-section">${photo.composition}<section/>
+          </a>
+        </section>
+      </figure>
+    </article>`;
+    const photoToRender = PhPizData[0].pizzaPhotos
+        ? PhPizData[0].pizzaPhotos.map(renderPhotos).join('')
+        : '';
+    return `
+  <section id="photo-section">${photoToRender}</section>`;
+}
+
+
+/***/ }),
+
+/***/ "./src/ts/components/saladePageForm.ts":
+/*!*********************************************!*\
+  !*** ./src/ts/components/saladePageForm.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ saladePageForm)
+/* harmony export */ });
+function saladePageForm(PhSalData) {
+    const renderPhotos = (photo) => `<article class="product-card">
+      <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
+        <section class="img-details">
+          <a href="/" class="img-a1" onclick="event.preventDefault();  window.onNavigate('#Login')">
+            <img src="${photo.src}" alt="${photo.name}" class="card-img">
+            <a href="/" class="img-a">${photo.name}</a>
+            <section  class="compo-section">${photo.composition}<section/>
+
+          </a>
+        </section>
+      </figure>
+    </article>`;
+    const photoToRender = PhSalData[0].saladePhotos
+        ? PhSalData[0].saladePhotos.map(renderPhotos).join('')
+        : '';
+    return `
+  <section id="photo-section">${photoToRender}</section>`;
+}
+
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/cake.jpg":
+/*!********************************************!*\
+  !*** ./src/logic/images/desserts/cake.jpg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "29a6fc322b6ba2ae16e2.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/cheesecacke.jpg":
+/*!***************************************************!*\
+  !*** ./src/logic/images/desserts/cheesecacke.jpg ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "8f75575d7fc1ced76216.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/coffe.jpg":
+/*!*********************************************!*\
+  !*** ./src/logic/images/desserts/coffe.jpg ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "9ff370df43f57dd09c71.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/dessert-choco.jpg":
+/*!*****************************************************!*\
+  !*** ./src/logic/images/desserts/dessert-choco.jpg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "934c434d83cd8227981f.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/jus-de-fraise.jpg":
+/*!*****************************************************!*\
+  !*** ./src/logic/images/desserts/jus-de-fraise.jpg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "34e10fc53ce65aa6ce2f.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/orange-juice.jpg":
+/*!****************************************************!*\
+  !*** ./src/logic/images/desserts/orange-juice.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "00f230bda1b05325700d.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/pancakes.jpg":
+/*!************************************************!*\
+  !*** ./src/logic/images/desserts/pancakes.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "a3b224ef6d5e5e0a9142.jpg";
+
+/***/ }),
+
 /***/ "./src/logic/images/desserts/strawberry-dessert.jpg":
 /*!**********************************************************!*\
   !*** ./src/logic/images/desserts/strawberry-dessert.jpg ***!
@@ -1087,6 +1903,16 @@ function photoPageForm(PhData) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "db0de89453ffd2c587d9.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/desserts/tiramisu.jpg":
+/*!************************************************!*\
+  !*** ./src/logic/images/desserts/tiramisu.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "20fe9bc9508ca1462b9c.jpg";
 
 /***/ }),
 
@@ -1106,7 +1932,7 @@ module.exports = __webpack_require__.p + "b0b38f8be84706661a80.png";
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "7772e8015d34f3866bbf.png";
+module.exports = __webpack_require__.p + "3527c47bbe4557684eee.png";
 
 /***/ }),
 
@@ -1120,6 +1946,56 @@ module.exports = __webpack_require__.p + "89168c248dd7d941ef8e.jpg";
 
 /***/ }),
 
+/***/ "./src/logic/images/pasta/pasta-fruit-de-mer.jpg":
+/*!*******************************************************!*\
+  !*** ./src/logic/images/pasta/pasta-fruit-de-mer.jpg ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "a72f3f99c61012d46c21.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pasta/pasta-jemjembre.jpg":
+/*!****************************************************!*\
+  !*** ./src/logic/images/pasta/pasta-jemjembre.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "ef70d28555d9631dff71.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pasta/pasta-red-sauce.jpg":
+/*!****************************************************!*\
+  !*** ./src/logic/images/pasta/pasta-red-sauce.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "fc396e544de70c0d415a.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pasta/pasta-saumon.jpg":
+/*!*************************************************!*\
+  !*** ./src/logic/images/pasta/pasta-saumon.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cb15391db34d0cbee1db.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pizza/pizza-Al -Tonno.jpg":
+/*!****************************************************!*\
+  !*** ./src/logic/images/pizza/pizza-Al -Tonno.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "6312e24c829025109bf2.jpg";
+
+/***/ }),
+
 /***/ "./src/logic/images/pizza/pizza-au-feu-de-bois.jpg":
 /*!*********************************************************!*\
   !*** ./src/logic/images/pizza/pizza-au-feu-de-bois.jpg ***!
@@ -1127,6 +2003,56 @@ module.exports = __webpack_require__.p + "89168c248dd7d941ef8e.jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "67ef460b4f7677c88372.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pizza/pizza-feuillejpg.jpg":
+/*!*****************************************************!*\
+  !*** ./src/logic/images/pizza/pizza-feuillejpg.jpg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "22480c04a7fef1de179e.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pizza/pizza-margaritta.jpg":
+/*!*****************************************************!*\
+  !*** ./src/logic/images/pizza/pizza-margaritta.jpg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "54bca0d31c4be42f33a8.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pizza/pizza-pepperoni.jpg":
+/*!****************************************************!*\
+  !*** ./src/logic/images/pizza/pizza-pepperoni.jpg ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "2c6a99cb0ed41a6cfa0f.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pizza/pizza-piment.jpg":
+/*!*************************************************!*\
+  !*** ./src/logic/images/pizza/pizza-piment.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "0cf969d4f3585d6883ee.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/pizza/pizza-red.jpg":
+/*!**********************************************!*\
+  !*** ./src/logic/images/pizza/pizza-red.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "c533183b738a3cab19f4.jpg";
 
 /***/ }),
 
@@ -1140,6 +2066,16 @@ module.exports = __webpack_require__.p + "b357266551a439a83fd8.jpg";
 
 /***/ }),
 
+/***/ "./src/logic/images/salade/papaya-salad.jpg":
+/*!**************************************************!*\
+  !*** ./src/logic/images/salade/papaya-salad.jpg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "8bbf0d8b752a267860d6.jpg";
+
+/***/ }),
+
 /***/ "./src/logic/images/salade/salad-1.jpg":
 /*!*********************************************!*\
   !*** ./src/logic/images/salade/salad-1.jpg ***!
@@ -1147,6 +2083,36 @@ module.exports = __webpack_require__.p + "b357266551a439a83fd8.jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "c010f0ed652d91c160c9.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/salade/salad-2jpg.jpg":
+/*!************************************************!*\
+  !*** ./src/logic/images/salade/salad-2jpg.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "a26552c619cfa02e7ebe.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/salade/salad-3jpg.jpg":
+/*!************************************************!*\
+  !*** ./src/logic/images/salade/salad-3jpg.jpg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "a0706c5476882c2b2179.jpg";
+
+/***/ }),
+
+/***/ "./src/logic/images/salade/salade-1.jpg":
+/*!**********************************************!*\
+  !*** ./src/logic/images/salade/salade-1.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d24b5a7131c02c924873.jpg";
 
 /***/ })
 
@@ -1292,12 +2258,31 @@ var __webpack_exports__ = {};
   !*** ./src/index.ts ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var _pages_loginUI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/loginUI */ "./src/pages/loginUI.ts");
 /* harmony import */ var _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logic/LoginBusinessLogic */ "./src/logic/LoginBusinessLogic.ts");
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
 /* harmony import */ var _pages_navBarUI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/navBarUI */ "./src/pages/navBarUI.ts");
 /* harmony import */ var _logic_PhotoDisplayLogic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./logic/PhotoDisplayLogic */ "./src/logic/PhotoDisplayLogic.ts");
 /* harmony import */ var _pages_photoUI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/photoUI */ "./src/pages/photoUI.ts");
+/* harmony import */ var _pages_pizzaUI__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/pizzaUI */ "./src/pages/pizzaUI.ts");
+/* harmony import */ var _logic_PizzaDisplayLogic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./logic/PizzaDisplayLogic */ "./src/logic/PizzaDisplayLogic.ts");
+/* harmony import */ var _pages_saladeUI__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/saladeUI */ "./src/pages/saladeUI.ts");
+/* harmony import */ var _logic_SaladeDisplayLogic__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./logic/SaladeDisplayLogic */ "./src/logic/SaladeDisplayLogic.ts");
+/* harmony import */ var _pages_pastaUI__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/pastaUI */ "./src/pages/pastaUI.ts");
+/* harmony import */ var _logic_PastaDisplayLogic__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./logic/PastaDisplayLogic */ "./src/logic/PastaDisplayLogic.ts");
+/* harmony import */ var _logic_DessertDisplayLogic__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./logic/DessertDisplayLogic */ "./src/logic/DessertDisplayLogic.ts");
+/* harmony import */ var _pages_dessertUI__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/dessertUI */ "./src/pages/dessertUI.ts");
+
+
+
+
+
+
+
+
 
 
 
@@ -1305,6 +2290,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.addEventListener('DOMContentLoaded', () => {
+    const photoDessertContainer = document.getElementById('photo-dessert-container');
+    if (photoDessertContainer) {
+        photoDessertContainer.innerHTML = (0,_pages_dessertUI__WEBPACK_IMPORTED_MODULE_13__["default"])();
+        new _logic_DessertDisplayLogic__WEBPACK_IMPORTED_MODULE_12__.DessertDisplayLogic();
+    }
+    const photoPastaContainer = document.getElementById('photo-pasta-container');
+    if (photoPastaContainer) {
+        photoPastaContainer.innerHTML = (0,_pages_pastaUI__WEBPACK_IMPORTED_MODULE_10__["default"])();
+        new _logic_PastaDisplayLogic__WEBPACK_IMPORTED_MODULE_11__.PastaDisplayLogic();
+    }
+    const photoSaladeContainer = document.getElementById('photo-salade-container');
+    if (photoSaladeContainer) {
+        photoSaladeContainer.innerHTML = (0,_pages_saladeUI__WEBPACK_IMPORTED_MODULE_8__["default"])();
+        new _logic_SaladeDisplayLogic__WEBPACK_IMPORTED_MODULE_9__.SaladeDisplayLogic();
+    }
+    const photoPizzaContainer = document.getElementById('photo-pizza-container');
+    if (photoPizzaContainer) {
+        photoPizzaContainer.innerHTML = (0,_pages_pizzaUI__WEBPACK_IMPORTED_MODULE_6__["default"])();
+        new _logic_PizzaDisplayLogic__WEBPACK_IMPORTED_MODULE_7__.PizzaDisplayLogic();
+    }
     const photoMain = document.getElementById('photo-container');
     if (photoMain) {
         photoMain.innerHTML = (0,_pages_photoUI__WEBPACK_IMPORTED_MODULE_5__["default"])();
@@ -1321,6 +2326,60 @@ window.addEventListener('DOMContentLoaded', () => {
         new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
     }
 });
+window.onNavigate = function (hash) {
+    routerPush(hash);
+};
+const routerPush = function (hash) {
+    history.pushState({}, '', location.origin + hash);
+    console.log('value de hash in routerPush', hash);
+    const container = document.getElementById('container');
+    if (container) {
+        container.innerHTML = '';
+        switch (hash) {
+            case '#Accueil':
+                if (container) {
+                    container.innerHTML = (0,_pages_photoUI__WEBPACK_IMPORTED_MODULE_5__["default"])();
+                    new _logic_PhotoDisplayLogic__WEBPACK_IMPORTED_MODULE_4__.PhotoDisplayLogic();
+                }
+                break;
+            case '#Pizza':
+                if (container) {
+                    container.innerHTML = (0,_pages_pizzaUI__WEBPACK_IMPORTED_MODULE_6__["default"])();
+                    new _logic_PizzaDisplayLogic__WEBPACK_IMPORTED_MODULE_7__.PizzaDisplayLogic();
+                }
+                break;
+            case '#Dessert':
+                if (container) {
+                    container.innerHTML = (0,_pages_dessertUI__WEBPACK_IMPORTED_MODULE_13__["default"])();
+                    new _logic_DessertDisplayLogic__WEBPACK_IMPORTED_MODULE_12__.DessertDisplayLogic();
+                }
+                break;
+            case '#Salade':
+                if (container) {
+                    container.innerHTML = (0,_pages_saladeUI__WEBPACK_IMPORTED_MODULE_8__["default"])();
+                    new _logic_SaladeDisplayLogic__WEBPACK_IMPORTED_MODULE_9__.SaladeDisplayLogic();
+                }
+                break;
+            case '#Pasta':
+                if (container) {
+                    container.innerHTML = (0,_pages_pastaUI__WEBPACK_IMPORTED_MODULE_10__["default"])();
+                    new _logic_PastaDisplayLogic__WEBPACK_IMPORTED_MODULE_11__.PastaDisplayLogic();
+                }
+                break;
+            case '#Login':
+                if (container) {
+                    container.innerHTML = (0,_pages_loginUI__WEBPACK_IMPORTED_MODULE_0__["default"])();
+                    new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
+                }
+                break;
+        }
+    }
+};
+window.addEventListener('DOMContentLoaded', () => {
+    console.log("démarrage de l'application");
+    routerPush(window.location.hash || '#Accueil');
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /******/ })()
 ;

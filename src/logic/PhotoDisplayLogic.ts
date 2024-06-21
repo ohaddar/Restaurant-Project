@@ -12,26 +12,26 @@ export class PhotoDisplayLogic {
       id: 'PhoTo',
       allPhotos: [
         {
-          id: 'photo1',
+          id: 'pizza',
           name: 'Pizza',
           type: 'landscape',
           src: pizza,
         },
         {
-          id: 'photo2',
+          id: 'pasta',
           name: 'Pasta',
           type: 'portrait',
           src: pasta,
         },
         {
-          id: 'photo3',
+          id: 'salade',
           name: 'Salade',
           type: 'landscape',
           src: salade,
         },
         {
-          id: 'photo3',
-          name: 'Desserts',
+          id: 'dessert',
+          name: 'Dessert',
           type: 'landscape',
           src: dessert,
         },

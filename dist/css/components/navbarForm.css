@@ -1,0 +1,27 @@
+#text-context {
+  font-family: cursive;
+  font-size: x-large;
+  padding: 4px;
+  text-decoration: none;
+  color: black;
+}
+#text-context :hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+#nav-icons {
+  display: flex;
+  justify-content: space-between;
+}
+#nav-icons :hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.icon-img {
+  width: 2rem;
+  margin: 3px;
+  margin-right: 17px;
+}

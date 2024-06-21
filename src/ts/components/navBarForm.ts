@@ -3,7 +3,7 @@ import { FormData, NavBar } from '../../types/type';
 export default function navBarForm(navBarData: FormData): string {
   const renderNavBar = (el: NavBar): string => {
     if (el.textContent) {
-      return `<span>${el.textContent}</span>`;
+      return `<a id="text-context" href="/"  onclick="event.preventDefault();  window.onNavigate('#Accueil')">${el.textContent}</a>`;
     }
     return '';
   };
@@ -11,7 +11,7 @@ export default function navBarForm(navBarData: FormData): string {
   const renderNavBarWithSrc = (el: NavBar): string => {
     if (el.src) {
       return `
-      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img"></a>
+      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img" onclick="event.preventDefault();  window.onNavigate('#Login')"></a>
       `;
     }
     return '';

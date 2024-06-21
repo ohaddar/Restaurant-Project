@@ -4,7 +4,10 @@ export type FormData = {
   buttons?: ButtonData[];
   NavBars?: NavBar[];
   allPhotos?: PhotoData[];
+  pizzaPhotos?: PhotoData[];
   dessertPhotos?: PhotoData[];
+  pastaPhotos?: PhotoData[];
+  saladePhotos?: PhotoData[];
 };
 
 export type InputData = {
@@ -33,4 +36,5 @@ export interface PhotoData {
   name: string;
   type: string;
   src: string;
+  composition?: string;
 }

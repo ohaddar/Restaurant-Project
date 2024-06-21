@@ -5,12 +5,12 @@ export default function form(data: FormData): string {
     <div class="form-group">
       <input id="${el.id}" name="${el.name}" type="${el.type}" placeholder="${
         el.placeholder || ''
-      }" />
+      }" class="input"/>
     </div>
   `;
 
   const renderButton = (el: ButtonData): string => `
-    <button id="${el.id || ''}" name="${el.name}" type="${el.type}">${
+    <button id="${el.id || ''}" name="${el.name}" type="${el.type}" class="button">${
       el.textContent
     }</button>
   `;
