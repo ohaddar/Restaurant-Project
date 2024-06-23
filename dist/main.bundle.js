@@ -1047,6 +1047,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logic_images_desserts_jus_de_fraise_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../logic/images/desserts/jus-de-fraise.jpg */ "./src/logic/images/desserts/jus-de-fraise.jpg");
 /* harmony import */ var _logic_images_desserts_orange_juice_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../logic/images/desserts/orange-juice.jpg */ "./src/logic/images/desserts/orange-juice.jpg");
 /* harmony import */ var _ts_components_dessertPageForm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../ts/components/dessertPageForm */ "./src/ts/components/dessertPageForm.ts");
+/* harmony import */ var _ts_services_MenuService__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ts/services/MenuService */ "./src/ts/services/MenuService.ts");
+
 
 
 
@@ -1119,6 +1121,18 @@ class DessertDisplayLogic {
                 },
             ],
         };
+        _ts_services_MenuService__WEBPACK_IMPORTED_MODULE_9__["default"].getDessert().then((res) => {
+            res.map((dessert) => {
+                var _a;
+                dessert.composition = 'Got from api :)';
+                dessert.src = dessert.urls[0];
+                dessert.id = 'id' + dessert.name;
+                (_a = this.PhDessData.dessertPhotos) === null || _a === void 0 ? void 0 : _a.push(dessert);
+            });
+            this.DisplayDessert(this.PhDessData);
+        });
+    }
+    DisplayDessert(desserts) {
         const photoDessertMain = document.getElementById('photo-dessert-main');
         if (photoDessertMain) {
             photoDessertMain.innerHTML = (0,_ts_components_dessertPageForm__WEBPACK_IMPORTED_MODULE_8__["default"])([this.PhDessData]);
@@ -1688,6 +1702,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ dessertPageForm)
 /* harmony export */ });
 function dessertPageForm(PhDessData) {
+    console.log('data', PhDessData);
     const renderPhotos = (photo) => `<article class="product-card">
       <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
         <section class="img-details">
@@ -2062,6 +2077,44 @@ class AuthService {
     static logout() { }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AuthService);
+
+
+/***/ }),
+
+/***/ "./src/ts/services/MenuService.ts":
+/*!****************************************!*\
+  !*** ./src/ts/services/MenuService.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _data_sources_api_data_source__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data-sources/api-data-source */ "./src/ts/data-sources/api-data-source.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+class MenuService {
+    static getMenu() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield _data_sources_api_data_source__WEBPACK_IMPORTED_MODULE_0__["default"].get('https://chezbobo.onrender.com/products');
+        });
+    }
+    static getDessert() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return (yield this.getMenu()).filter((m) => m.type === 'dessert');
+        });
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MenuService);
 
 
 /***/ }),

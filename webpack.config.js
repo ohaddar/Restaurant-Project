@@ -36,7 +36,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: 'src/ts/data-sources/users.json', to: 'data/users.json' },
+        { from: 'src/database/users.json', to: 'data/users.json' },
         {
           from: 'src/css/style.css',
           to: 'css/style.css',

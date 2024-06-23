@@ -10,6 +10,7 @@ import jusFraise from '../logic/images/desserts/jus-de-fraise.jpg';
 import jusOrange from '../logic/images/desserts/orange-juice.jpg';
 
 import dessertPageForm from '../ts/components/dessertPageForm';
+import MenuService from '../ts/services/MenuService';
 export class DessertDisplayLogic {
   PhDessData: FormData;
 
@@ -80,6 +81,17 @@ export class DessertDisplayLogic {
       ],
     };
 
+    MenuService.getDessert().then((res) => {
+      res.map((dessert: any) => {
+        dessert.composition = 'Got from api :)';
+        dessert.src = dessert.urls[0];
+        dessert.id = 'id' + dessert.name;
+        this.PhDessData.dessertPhotos?.push(dessert);
+      });
+      this.DisplayDessert(this.PhDessData);
+    });
+  }
+  private DisplayDessert(desserts: any) {
     const photoDessertMain: HTMLElement | null =
       document.getElementById('photo-dessert-main');
 
