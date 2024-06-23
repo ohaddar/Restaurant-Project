@@ -1,0 +1,52 @@
+.register__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  background-image: url('../../ts/logic/images/restaurent/restaurant.jpg');
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#register-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+#register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #877e7e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 165%;
+  align-self: center;
+  margin-top: 40%;
+  margin-left: -27%;
+  overflow: hidden;
+  animation: slideDown 0.9s ease-in-out forwards;
+  animation-delay: 0s;
+}
+#input-section {
+  margin-top: 2rem;
+}
+#button-section {
+  display: flex;
+  width: 61%;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}

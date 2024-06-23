@@ -66,6 +66,10 @@ module.exports = {
           to: 'css/page/login.css',
         },
         {
+          from: 'src/css/page/register.css',
+          to: 'css/page/register.css',
+        },
+        {
           from: 'src/css/page/photoPg.css',
           to: 'css/page/photoPg.css',
         },

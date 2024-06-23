@@ -1,11 +1,11 @@
 import form from '../components/form';
 import navBarForm from '../components/navBarForm';
-import { FormData } from '../types/type';
 import loginIcon from './images/icons/sign-in.png';
 import logoutIcon from './images/icons/sign-out.png';
 import NotificationService from '../services/NotificationService';
 import AuthService from '../services/AuthService';
 import registerForm from '../components/registerForm';
+import { FormData } from '../types/type';
 
 export class LoginBusinessLogic {
   data: FormData;
