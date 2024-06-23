@@ -1,4 +1,4 @@
-import { FormData, PhotoData } from '../../types/type';
+import { FormData, PhotoData } from '../types/type';
 
 export default function dessertPageForm(PhDessData: FormData[]): string {
   const renderPhotos = (photo: PhotoData): string =>

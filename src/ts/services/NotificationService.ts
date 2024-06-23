@@ -1,4 +1,4 @@
-import paragraph from '../../pages/paragraph';
+import paragraph from '../pages/paragraph';
 
 class NotificationService {
   notifElement: HTMLElement | null;

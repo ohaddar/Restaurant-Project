@@ -1,4 +1,4 @@
-import { ButtonData, FormData, InputData } from '../../types/type';
+import { ButtonData, FormData, InputData } from '../types/type';
 
 export default function registerForm(data: FormData): string {
   const renderInput = (el: InputData): string => `

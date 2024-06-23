@@ -1,4 +1,4 @@
-import { FormData, NavBar } from '../../types/type';
+import { FormData, NavBar } from '../types/type';
 
 export default function navBarForm(navBarData: FormData): string {
   const renderNavBar = (el: NavBar): string => {

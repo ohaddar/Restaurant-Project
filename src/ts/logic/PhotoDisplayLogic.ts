@@ -1,4 +1,4 @@
-import photoPageForm from '../ts/components/photoPageForm';
+import photoPageForm from '../components/photoPageForm';
 import { FormData } from '../types/type';
 import pizza from './images/pizza/pizza-au-feu-de-bois.jpg';
 import pasta from './images/pasta/pasta 3.jpg';

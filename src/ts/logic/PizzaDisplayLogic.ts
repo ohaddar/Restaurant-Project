@@ -1,4 +1,4 @@
-import photoPageForm from '../ts/components/photoPageForm';
+import photoPageForm from '../components/photoPageForm';
 import { FormData } from '../types/type';
 import pizzaMargaritta from './images/pizza/pizza-margaritta.jpg';
 import pizzaFeuille from './images/pizza/pizza-feuillejpg.jpg';
@@ -7,7 +7,7 @@ import pizzaPepperoni from './images/pizza/pizza-pepperoni.jpg';
 import pizzaPiment from './images/pizza/pizza-piment.jpg';
 import pizzaRed from './images/pizza/pizza-red.jpg';
 
-import pizzaPageForm from '../ts/components/pizzaPageForm';
+import pizzaPageForm from '../components/pizzaPageForm';
 export class PizzaDisplayLogic {
   PhPizData: FormData;
 

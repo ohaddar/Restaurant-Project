@@ -1,11 +1,11 @@
-import photoPageForm from '../ts/components/photoPageForm';
+import photoPageForm from '../components/photoPageForm';
 import { FormData } from '../types/type';
 import salade1 from './images/salade/salad-2jpg.jpg';
 import salade2 from './images/salade/salad-3jpg.jpg';
 import salade3 from './images/salade/salade-1.jpg';
 import papayaSalade from './images/salade/papaya-salad.jpg';
 
-import saladePageForm from '../ts/components/saladePageForm';
+import saladePageForm from '../components/saladePageForm';
 export class SaladeDisplayLogic {
   PhSalData: FormData;
 

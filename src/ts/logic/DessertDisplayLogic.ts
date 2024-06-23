@@ -1,4 +1,4 @@
-import photoPageForm from '../ts/components/photoPageForm';
+import photoPageForm from '../components/photoPageForm';
 import { FormData } from '../types/type';
 import cake from '../logic/images/desserts/cake.jpg';
 import cheesecake from '../logic/images/desserts/cheesecacke.jpg';
@@ -9,8 +9,8 @@ import coffe from '../logic/images/desserts/coffe.jpg';
 import jusFraise from '../logic/images/desserts/jus-de-fraise.jpg';
 import jusOrange from '../logic/images/desserts/orange-juice.jpg';
 
-import dessertPageForm from '../ts/components/dessertPageForm';
-import MenuService from '../ts/services/MenuService';
+import dessertPageForm from '../components/dessertPageForm';
+import MenuService from '../services/MenuService';
 export class DessertDisplayLogic {
   PhDessData: FormData;
 

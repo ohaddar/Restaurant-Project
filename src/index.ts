@@ -1,19 +1,19 @@
-import loginUI from './pages/loginUI';
-import { LoginBusinessLogic } from './logic/LoginBusinessLogic';
+import loginUI from './ts/pages/loginUI';
+import { LoginBusinessLogic } from './ts/logic/LoginBusinessLogic';
 import './css/style.css';
 import navBarUI from './ts/layouts/navBarUI';
-import { PhotoDisplayLogic } from './logic/PhotoDisplayLogic';
-import photoUI from './pages/photoUI';
-import pizzaUI from './pages/pizzaUI';
-import { PizzaDisplayLogic } from './logic/PizzaDisplayLogic';
-import saladeUI from './pages/saladeUI';
-import { SaladeDisplayLogic } from './logic/SaladeDisplayLogic';
-import pastaUI from './pages/pastaUI';
-import { PastaDisplayLogic } from './logic/PastaDisplayLogic';
-import { DessertDisplayLogic } from './logic/DessertDisplayLogic';
-import dessertUI from './pages/dessertUI';
+import { PhotoDisplayLogic } from './ts/logic/PhotoDisplayLogic';
+import photoUI from './ts/pages/photoUI';
+import pizzaUI from './ts/pages/pizzaUI';
+import { PizzaDisplayLogic } from './ts/logic/PizzaDisplayLogic';
+import saladeUI from './ts/pages/saladeUI';
+import { SaladeDisplayLogic } from './ts/logic/SaladeDisplayLogic';
+import pastaUI from './ts/pages/pastaUI';
+import { PastaDisplayLogic } from './ts/logic/PastaDisplayLogic';
+import { DessertDisplayLogic } from './ts/logic/DessertDisplayLogic';
+import dessertUI from './ts/pages/dessertUI';
 import notification from './ts/layouts/notification';
-import registerUI from './pages/registerUI';
+import registerUI from './ts/pages/registerUI';
 
 window.addEventListener('DOMContentLoaded', () => {
   const photoDessertContainer: HTMLElement | null = document.getElementById(

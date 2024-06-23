@@ -30,7 +30,7 @@ figure {
 #photo-salade-main,
 #photo-pasta-main,
 #photo-dessert-main {
-  background-image: url('../../logic/images/restaurent/restaurant.jpg');
+  background-image: url('../../ts/logic/images/restaurent/restaurant.jpg');
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
   padding-top: 93px;

@@ -1,11 +1,11 @@
-import photoPageForm from '../ts/components/photoPageForm';
+import photoPageForm from '../components/photoPageForm';
 import { FormData } from '../types/type';
 import pasta3 from '../logic/images/pasta/pasta 3.jpg';
 import pastaFruit from '../logic/images/pasta/pasta-fruit-de-mer.jpg';
 import pastaJem from '../logic/images/pasta/pasta-jemjembre.jpg';
 import pastaRed from '../logic/images/pasta/pasta-red-sauce.jpg';
 import pastaSaumon from '../logic/images/pasta/pasta-saumon.jpg';
-import pastaPageForm from '../ts/components/pastaPageForm';
+import pastaPageForm from '../components/pastaPageForm';
 export class PastaDisplayLogic {
   PhPasData: FormData;
 
