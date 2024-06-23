@@ -4,5 +4,7 @@
 @import url(components/navbarForm.css);
 @import url(layouts/navBr.css);
 @import url(page/login.css);
+@import url(page/register.css);
+
 @import url(page/photoPg.css);
 @import url(layouts/notification.css);

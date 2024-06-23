@@ -1,4 +1,4 @@
-.login__main {
+.register__main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,14 +16,14 @@
     transform: translateY(0);
   }
 }
-#login-container {
+#register-container {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
   padding-top: 10%;
   display: flex;
   flex-direction: column;
 }
-#login-form {
+#register-form {
   display: flex;
   flex-direction: column;
   align-items: center;

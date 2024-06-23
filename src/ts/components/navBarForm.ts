@@ -9,9 +9,9 @@ export default function navBarForm(navBarData: FormData): string {
   };
 
   const renderNavBarWithSrc = (el: NavBar): string => {
-    if (el.src) {
+    if (el.src && el.display === true) {
       return `
-      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img" onclick="event.preventDefault();  window.onNavigate('#Login')"></a>
+      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img" onclick="event.preventDefault();  window.loginLogout();"></a>
       `;
     }
     return '';

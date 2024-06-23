@@ -1,10 +1,12 @@
 import form from '../ts/components/form';
 import navBarForm from '../ts/components/navBarForm';
 import { FormData } from '../types/type';
-import homeIcon from './images/icons/home.png';
-import eatIcon from './images/icons/eat.png';
+import loginIcon from './images/icons/sign-in.png';
+import logoutIcon from './images/icons/sign-out.png';
 import NotificationService from '../ts/services/NotificationService';
 import AuthService from '../ts/services/AuthServics';
+import registerForm from '../ts/components/registerForm';
+
 export class LoginBusinessLogic {
   data: FormData;
   navBarData: FormData;
@@ -40,6 +42,14 @@ export class LoginBusinessLogic {
           textContent: 'Reset',
         },
       ],
+      buttonRegister: [
+        {
+          id: 'register-button',
+          name: 'register-button',
+          type: 'button',
+          textContent: "Don't have an account: register",
+        },
+      ],
     };
     this.navBarData = {
       id: 'navBar',
@@ -49,18 +59,21 @@ export class LoginBusinessLogic {
           name: 'home',
           type: 'string',
           textContent: 'ChezBobo',
+          display: true,
         },
         {
           id: 'contact-div',
-          name: 'contact',
+          name: 'logout',
           type: 'string',
-          src: homeIcon,
+          src: logoutIcon,
+          display: localStorage.getItem('isLogged') === 'yes',
         },
         {
           id: 'login-div',
           name: 'login',
           type: 'string',
-          src: eatIcon,
+          src: loginIcon,
+          display: localStorage.getItem('isLogged') !== 'yes',
         },
       ],
     };
@@ -74,6 +87,11 @@ export class LoginBusinessLogic {
     if (loginMain) {
       loginMain.innerHTML = form(this.data);
     }
+    const registerMain: HTMLElement | null =
+      document.getElementById('register-main');
+    if (registerMain) {
+      registerMain.innerHTML = registerForm(this.data);
+    }
 
     this.attachEventListeners();
   }
@@ -83,6 +101,10 @@ export class LoginBusinessLogic {
     if (formElement) {
       formElement.addEventListener('submit', this.onSubmit.bind(this));
       formElement.addEventListener('reset', this.onReset.bind(this));
+    }
+    const registerButton = document.getElementById('register-button');
+    if (registerButton) {
+      registerButton.addEventListener('click', this.onRegister.bind(this));
     }
   }
 
@@ -99,17 +121,22 @@ export class LoginBusinessLogic {
         'Email ou Mot de passe oublié',
         'negative'
       );
+      return;
     }
+
     const isLoggedIn = await AuthService.login({
       email: email,
       password: password,
     });
 
     if (isLoggedIn) {
+      window.onNavigate('#Accueil');
+      localStorage.setItem('isLogged', 'yes');
+
       new NotificationService().setMessage(
         '<span>Connexion réussie 🎉\n</span><span>Bienvenue ' +
           email.split('@')[0].charAt(0).toUpperCase() +
-          password.split('@')[0].slice(1).toLowerCase() +
+          email.split('@')[0].slice(1).toLowerCase() +
           '</span>',
         'positive'
       );
@@ -125,7 +152,10 @@ export class LoginBusinessLogic {
     const formReset = document.getElementById(this.data.id!) as HTMLFormElement;
     if (formReset) {
       formReset.reset();
-      console.log([]);
     }
+  }
+
+  onRegister(e: Event) {
+    window.onNavigate('#Register');
   }
 }

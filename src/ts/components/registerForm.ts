@@ -1,6 +1,6 @@
 import { ButtonData, FormData, InputData } from '../../types/type';
 
-export default function form(data: FormData): string {
+export default function registerForm(data: FormData): string {
   const renderInput = (el: InputData): string => `
     <div class="form-group">
       <input id="${el.id}" name="${el.name}" type="${el.type}" placeholder="${
@@ -14,17 +14,10 @@ export default function form(data: FormData): string {
       el.textContent
     }</button>
   `;
-  const renderButtonRegister = (el: ButtonData): string => `
-    <button id="${el.id || ''}" name="${el.name}" type="${el.type}" class="button">${
-      el.textContent
-    }</button>
-  `;
 
   const inputs = data.inputs ? data.inputs.map(renderInput).join('') : '';
   const buttons = data.buttons ? data.buttons.map(renderButton).join('') : '';
-  const registerBtn = data.buttonRegister
-    ? data.buttonRegister.map(renderButtonRegister).join('')
-    : '';
+
   return `
   <div>
     <form id="${data.id || 'body-form'}" class="form">
@@ -34,9 +27,7 @@ export default function form(data: FormData): string {
       <section id="button-section">
         ${buttons}
       </section>
-      <section id="button-section">
-      ${registerBtn}
-    </section>
+  
     </form>
     <div/>
   `;

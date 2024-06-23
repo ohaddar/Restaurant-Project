@@ -1,8 +1,6 @@
 import { FormData, PhotoData } from '../../types/type';
 
 export default function dessertPageForm(PhDessData: FormData[]): string {
-  console.log('data', PhDessData);
-
   const renderPhotos = (photo: PhotoData): string =>
     `<article class="product-card">
       <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">

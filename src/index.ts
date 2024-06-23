@@ -13,6 +13,7 @@ import { PastaDisplayLogic } from './logic/PastaDisplayLogic';
 import { DessertDisplayLogic } from './logic/DessertDisplayLogic';
 import dessertUI from './pages/dessertUI';
 import notification from './ts/layouts/notification';
+import registerUI from './pages/registerUI';
 
 window.addEventListener('DOMContentLoaded', () => {
   const photoDessertContainer: HTMLElement | null = document.getElementById(
@@ -53,9 +54,14 @@ window.addEventListener('DOMContentLoaded', () => {
     new PhotoDisplayLogic();
   }
   const formContainer = document.getElementById('login-container');
+  const registerContainer = document.getElementById('register-container');
   const navBarContainer = document.getElementById('navBar-container');
   if (formContainer) {
     formContainer.innerHTML = loginUI();
+    new LoginBusinessLogic();
+  }
+  if (registerContainer) {
+    registerContainer.innerHTML = registerUI();
     new LoginBusinessLogic();
   }
   if (navBarContainer) {
@@ -67,11 +73,19 @@ window.addEventListener('DOMContentLoaded', () => {
 declare global {
   interface Window {
     onNavigate: (hash: string) => void;
+    loginLogout: () => void;
   }
 }
 
 window.onNavigate = function (hash) {
   routerPush(hash);
+};
+
+window.loginLogout = () => {
+  if (localStorage.getItem('isLogged') === 'yes') {
+    localStorage.removeItem('isLogged');
+  }
+  window.onNavigate('#Login');
 };
 
 const routerPush = function (hash: string) {
@@ -117,7 +131,20 @@ const routerPush = function (hash: string) {
         break;
       case '#Login':
         if (container) {
-          container.innerHTML = loginUI();
+          const isLogged = localStorage.getItem('isLogged') === 'yes';
+          if (isLogged) {
+            history.pushState({}, '', location.origin + '#Accueil');
+            container.innerHTML = photoUI();
+            new PhotoDisplayLogic();
+          } else {
+            container.innerHTML = loginUI();
+            new LoginBusinessLogic();
+          }
+        }
+        break;
+      case '#Register':
+        if (container) {
+          container.innerHTML = registerUI();
           new LoginBusinessLogic();
         }
         break;
@@ -127,6 +154,10 @@ const routerPush = function (hash: string) {
 
 window.addEventListener('DOMContentLoaded', () => {
   routerPush(window.location.hash || '#Accueil');
+});
+
+window.addEventListener('popstate', () => {
+  location.reload();
 });
 
 export default {};

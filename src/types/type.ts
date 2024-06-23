@@ -8,6 +8,7 @@ export type FormData = {
   dessertPhotos?: PhotoData[];
   pastaPhotos?: PhotoData[];
   saladePhotos?: PhotoData[];
+  buttonRegister?: ButtonData[];
 };
 
 export type InputData = {
@@ -29,6 +30,7 @@ export type NavBar = {
   type: string;
   textContent?: string;
   src?: string;
+  display: boolean;
 };
 
 export interface PhotoData {

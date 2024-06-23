@@ -369,7 +369,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login__main {
   margin-left: -27%;
   overflow: hidden;
   animation: slideDown 0.9s ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 #input-section {
   margin-top: 2rem;
@@ -381,7 +381,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login__main {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-`, "",{"version":3,"sources":["webpack://./src/css/page/login.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,oCAAoC;EACpC,4BAA4B;EAC5B,yDAA4E;AAC9E;AACA;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,wBAAwB;EAC1B;AACF;AACA;EACE,oCAAoC;EACpC,4BAA4B;EAC5B,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;EACnB,uCAAuC;EACvC,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,8CAA8C;EAC9C,qBAAqB;AACvB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,UAAU;EACV,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB","sourcesContent":[".login__main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  padding-bottom: 30%;\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');\n}\n@keyframes slideDown {\n  from {\n    transform: translateY(-100%);\n  }\n  to {\n    transform: translateY(0);\n  }\n}\n#login-container {\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 10%;\n  display: flex;\n  flex-direction: column;\n}\n#login-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #877e7e;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  width: 165%;\n  align-self: center;\n  margin-top: 40%;\n  margin-left: -27%;\n  overflow: hidden;\n  animation: slideDown 0.9s ease-in-out forwards;\n  animation-delay: 0.5s;\n}\n#input-section {\n  margin-top: 2rem;\n}\n#button-section {\n  display: flex;\n  width: 61%;\n  margin-left: -1rem;\n  margin-top: 2rem;\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/css/page/login.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,oCAAoC;EACpC,4BAA4B;EAC5B,yDAA4E;AAC9E;AACA;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,wBAAwB;EAC1B;AACF;AACA;EACE,oCAAoC;EACpC,4BAA4B;EAC5B,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;EACnB,uCAAuC;EACvC,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,8CAA8C;EAC9C,mBAAmB;AACrB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,UAAU;EACV,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB","sourcesContent":[".login__main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  padding-bottom: 30%;\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');\n}\n@keyframes slideDown {\n  from {\n    transform: translateY(-100%);\n  }\n  to {\n    transform: translateY(0);\n  }\n}\n#login-container {\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 10%;\n  display: flex;\n  flex-direction: column;\n}\n#login-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #877e7e;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  width: 165%;\n  align-self: center;\n  margin-top: 40%;\n  margin-left: -27%;\n  overflow: hidden;\n  animation: slideDown 0.9s ease-in-out forwards;\n  animation-delay: 0s;\n}\n#input-section {\n  margin-top: 2rem;\n}\n#button-section {\n  display: flex;\n  width: 61%;\n  margin-left: -1rem;\n  margin-top: 2rem;\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -504,6 +504,89 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.img-a {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/page/register.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/page/register.css ***!
+  \*************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../src/logic/images/restaurent/restaurant.jpg */ "./src/logic/images/restaurent/restaurant.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.register__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#register-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: color;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+#register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #877e7e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 165%;
+  align-self: center;
+  margin-top: 40%;
+  margin-left: -27%;
+  overflow: hidden;
+  animation: slideDown 0.9s ease-in-out forwards;
+  animation-delay: 0s;
+}
+#input-section {
+  margin-top: 2rem;
+}
+#button-section {
+  display: flex;
+  width: 61%;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/page/register.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,oCAAoC;EACpC,4BAA4B;EAC5B,yDAA4E;AAC9E;AACA;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,wBAAwB;EAC1B;AACF;AACA;EACE,oCAAoC;EACpC,4BAA4B;EAC5B,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;EACnB,uCAAuC;EACvC,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,8CAA8C;EAC9C,mBAAmB;AACrB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,UAAU;EACV,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB","sourcesContent":[".register__main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  padding-bottom: 30%;\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');\n}\n@keyframes slideDown {\n  from {\n    transform: translateY(-100%);\n  }\n  to {\n    transform: translateY(0);\n  }\n}\n#register-container {\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 10%;\n  display: flex;\n  flex-direction: column;\n}\n#register-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #877e7e;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  width: 165%;\n  align-self: center;\n  margin-top: 40%;\n  margin-left: -27%;\n  overflow: hidden;\n  animation: slideDown 0.9s ease-in-out forwards;\n  animation-delay: 0s;\n}\n#input-section {\n  margin-top: 2rem;\n}\n#button-section {\n  display: flex;\n  width: 61%;\n  margin-left: -1rem;\n  margin-top: 2rem;\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/style.css":
 /*!*****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
@@ -524,9 +607,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_components_navbarForm_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./components/navbarForm.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/components/navbarForm.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_layouts_navBr_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./layouts/navBr.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/navBr.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_login_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/login.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/login.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/photoPg.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/photoPg.css");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_layouts_notification_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./layouts/notification.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/notification.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_register_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/register.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/register.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/photoPg.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/photoPg.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_layouts_notification_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./layouts/notification.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/notification.css");
 // Imports
+
 
 
 
@@ -544,8 +629,9 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_input_
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_navbarForm_css__WEBPACK_IMPORTED_MODULE_5__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_layouts_navBr_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_login_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
-___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_layouts_notification_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_register_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_layouts_notification_css__WEBPACK_IMPORTED_MODULE_10__["default"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `
 `, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
@@ -1155,10 +1241,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ts_components_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ts/components/form */ "./src/ts/components/form.ts");
 /* harmony import */ var _ts_components_navBarForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ts/components/navBarForm */ "./src/ts/components/navBarForm.ts");
-/* harmony import */ var _images_icons_home_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/icons/home.png */ "./src/logic/images/icons/home.png");
-/* harmony import */ var _images_icons_eat_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/icons/eat.png */ "./src/logic/images/icons/eat.png");
+/* harmony import */ var _images_icons_sign_in_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/icons/sign-in.png */ "./src/logic/images/icons/sign-in.png");
+/* harmony import */ var _images_icons_sign_out_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/icons/sign-out.png */ "./src/logic/images/icons/sign-out.png");
 /* harmony import */ var _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ts/services/NotificationService */ "./src/ts/services/NotificationService.ts");
 /* harmony import */ var _ts_services_AuthServics__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ts/services/AuthServics */ "./src/ts/services/AuthServics.ts");
+/* harmony import */ var _ts_components_registerForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ts/components/registerForm */ "./src/ts/components/registerForm.ts");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -1168,6 +1255,7 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+
 
 
 
@@ -1206,6 +1294,14 @@ class LoginBusinessLogic {
                     textContent: 'Reset',
                 },
             ],
+            buttonRegister: [
+                {
+                    id: 'register-button',
+                    name: 'register-button',
+                    type: 'button',
+                    textContent: "Don't have an account: register",
+                },
+            ],
         };
         this.navBarData = {
             id: 'navBar',
@@ -1215,18 +1311,21 @@ class LoginBusinessLogic {
                     name: 'home',
                     type: 'string',
                     textContent: 'ChezBobo',
+                    display: true,
                 },
                 {
                     id: 'contact-div',
-                    name: 'contact',
+                    name: 'logout',
                     type: 'string',
-                    src: _images_icons_home_png__WEBPACK_IMPORTED_MODULE_2__,
+                    src: _images_icons_sign_out_png__WEBPACK_IMPORTED_MODULE_3__,
+                    display: localStorage.getItem('isLogged') === 'yes',
                 },
                 {
                     id: 'login-div',
                     name: 'login',
                     type: 'string',
-                    src: _images_icons_eat_png__WEBPACK_IMPORTED_MODULE_3__,
+                    src: _images_icons_sign_in_png__WEBPACK_IMPORTED_MODULE_2__,
+                    display: localStorage.getItem('isLogged') !== 'yes',
                 },
             ],
         };
@@ -1238,6 +1337,10 @@ class LoginBusinessLogic {
         if (loginMain) {
             loginMain.innerHTML = (0,_ts_components_form__WEBPACK_IMPORTED_MODULE_0__["default"])(this.data);
         }
+        const registerMain = document.getElementById('register-main');
+        if (registerMain) {
+            registerMain.innerHTML = (0,_ts_components_registerForm__WEBPACK_IMPORTED_MODULE_6__["default"])(this.data);
+        }
         this.attachEventListeners();
     }
     attachEventListeners() {
@@ -1245,6 +1348,10 @@ class LoginBusinessLogic {
         if (formElement) {
             formElement.addEventListener('submit', this.onSubmit.bind(this));
             formElement.addEventListener('reset', this.onReset.bind(this));
+        }
+        const registerButton = document.getElementById('register-button');
+        if (registerButton) {
+            registerButton.addEventListener('click', this.onRegister.bind(this));
         }
     }
     onSubmit(e) {
@@ -1256,15 +1363,18 @@ class LoginBusinessLogic {
             const password = formData.get('password');
             if (!email || !password) {
                 new _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__["default"]().setMessage('Email ou Mot de passe oublié', 'negative');
+                return;
             }
             const isLoggedIn = yield _ts_services_AuthServics__WEBPACK_IMPORTED_MODULE_5__["default"].login({
                 email: email,
                 password: password,
             });
             if (isLoggedIn) {
+                window.onNavigate('#Accueil');
+                localStorage.setItem('isLogged', 'yes');
                 new _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__["default"]().setMessage('<span>Connexion réussie 🎉\n</span><span>Bienvenue ' +
                     email.split('@')[0].charAt(0).toUpperCase() +
-                    password.split('@')[0].slice(1).toLowerCase() +
+                    email.split('@')[0].slice(1).toLowerCase() +
                     '</span>', 'positive');
             }
             else {
@@ -1276,8 +1386,10 @@ class LoginBusinessLogic {
         const formReset = document.getElementById(this.data.id);
         if (formReset) {
             formReset.reset();
-            console.log([]);
         }
+    }
+    onRegister(e) {
+        window.onNavigate('#Register');
     }
 }
 
@@ -1674,6 +1786,24 @@ function pizzaUI() {
 
 /***/ }),
 
+/***/ "./src/pages/registerUI.ts":
+/*!*********************************!*\
+  !*** ./src/pages/registerUI.ts ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ registerUI)
+/* harmony export */ });
+function registerUI() {
+    return ` <main class="register__main" id="register-main">
+    </main>`;
+}
+
+
+/***/ }),
+
 /***/ "./src/pages/saladeUI.ts":
 /*!*******************************!*\
   !*** ./src/pages/saladeUI.ts ***!
@@ -1702,7 +1832,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ dessertPageForm)
 /* harmony export */ });
 function dessertPageForm(PhDessData) {
-    console.log('data', PhDessData);
     const renderPhotos = (photo) => `<article class="product-card">
       <figure id="${photo.id}" name="${photo.name}" type="${photo.type}" class="img-figure">
         <section class="img-details">
@@ -1744,8 +1873,14 @@ function form(data) {
     const renderButton = (el) => `
     <button id="${el.id || ''}" name="${el.name}" type="${el.type}" class="button">${el.textContent}</button>
   `;
+    const renderButtonRegister = (el) => `
+    <button id="${el.id || ''}" name="${el.name}" type="${el.type}" class="button">${el.textContent}</button>
+  `;
     const inputs = data.inputs ? data.inputs.map(renderInput).join('') : '';
     const buttons = data.buttons ? data.buttons.map(renderButton).join('') : '';
+    const registerBtn = data.buttonRegister
+        ? data.buttonRegister.map(renderButtonRegister).join('')
+        : '';
     return `
   <div>
     <form id="${data.id || 'body-form'}" class="form">
@@ -1755,6 +1890,9 @@ function form(data) {
       <section id="button-section">
         ${buttons}
       </section>
+      <section id="button-section">
+      ${registerBtn}
+    </section>
     </form>
     <div/>
   `;
@@ -1781,9 +1919,9 @@ function navBarForm(navBarData) {
         return '';
     };
     const renderNavBarWithSrc = (el) => {
-        if (el.src) {
+        if (el.src && el.display === true) {
             return `
-      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img" onclick="event.preventDefault();  window.onNavigate('#Login')"></a>
+      <a href="/"><img src="${el.src}" alt="${el.name}" class="icon-img" onclick="event.preventDefault();  window.loginLogout();"></a>
       `;
         }
         return '';
@@ -1902,6 +2040,45 @@ function pizzaPageForm(PhPizData) {
         : '';
     return `
   <section id="photo-section">${photoToRender}</section>`;
+}
+
+
+/***/ }),
+
+/***/ "./src/ts/components/registerForm.ts":
+/*!*******************************************!*\
+  !*** ./src/ts/components/registerForm.ts ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ registerForm)
+/* harmony export */ });
+function registerForm(data) {
+    const renderInput = (el) => `
+    <div class="form-group">
+      <input id="${el.id}" name="${el.name}" type="${el.type}" placeholder="${el.placeholder || ''}" class="input"/>
+    </div>
+  `;
+    const renderButton = (el) => `
+    <button id="${el.id || ''}" name="${el.name}" type="${el.type}" class="button">${el.textContent}</button>
+  `;
+    const inputs = data.inputs ? data.inputs.map(renderInput).join('') : '';
+    const buttons = data.buttons ? data.buttons.map(renderButton).join('') : '';
+    return `
+  <div>
+    <form id="${data.id || 'body-form'}" class="form">
+      <section id="input-section">
+        ${inputs}
+      </section>
+      <section id="button-section">
+        ${buttons}
+      </section>
+  
+    </form>
+    <div/>
+  `;
 }
 
 
@@ -2279,23 +2456,23 @@ module.exports = __webpack_require__.p + "20fe9bc9508ca1462b9c.jpg";
 
 /***/ }),
 
-/***/ "./src/logic/images/icons/eat.png":
-/*!****************************************!*\
-  !*** ./src/logic/images/icons/eat.png ***!
-  \****************************************/
+/***/ "./src/logic/images/icons/sign-in.png":
+/*!********************************************!*\
+  !*** ./src/logic/images/icons/sign-in.png ***!
+  \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "b0b38f8be84706661a80.png";
+module.exports = __webpack_require__.p + "b9f46f09e76946c17487.png";
 
 /***/ }),
 
-/***/ "./src/logic/images/icons/home.png":
-/*!*****************************************!*\
-  !*** ./src/logic/images/icons/home.png ***!
-  \*****************************************/
+/***/ "./src/logic/images/icons/sign-out.png":
+/*!*********************************************!*\
+  !*** ./src/logic/images/icons/sign-out.png ***!
+  \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "3527c47bbe4557684eee.png";
+module.exports = __webpack_require__.p + "aaef62755ee498dccdfc.png";
 
 /***/ }),
 
@@ -2639,6 +2816,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logic_DessertDisplayLogic__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./logic/DessertDisplayLogic */ "./src/logic/DessertDisplayLogic.ts");
 /* harmony import */ var _pages_dessertUI__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/dessertUI */ "./src/pages/dessertUI.ts");
 /* harmony import */ var _ts_layouts_notification__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ts/layouts/notification */ "./src/ts/layouts/notification.ts");
+/* harmony import */ var _pages_registerUI__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/registerUI */ "./src/pages/registerUI.ts");
+
 
 
 
@@ -2681,9 +2860,14 @@ window.addEventListener('DOMContentLoaded', () => {
         new _logic_PhotoDisplayLogic__WEBPACK_IMPORTED_MODULE_4__.PhotoDisplayLogic();
     }
     const formContainer = document.getElementById('login-container');
+    const registerContainer = document.getElementById('register-container');
     const navBarContainer = document.getElementById('navBar-container');
     if (formContainer) {
         formContainer.innerHTML = (0,_pages_loginUI__WEBPACK_IMPORTED_MODULE_0__["default"])();
+        new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
+    }
+    if (registerContainer) {
+        registerContainer.innerHTML = (0,_pages_registerUI__WEBPACK_IMPORTED_MODULE_15__["default"])();
         new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
     }
     if (navBarContainer) {
@@ -2693,6 +2877,12 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 window.onNavigate = function (hash) {
     routerPush(hash);
+};
+window.loginLogout = () => {
+    if (localStorage.getItem('isLogged') === 'yes') {
+        localStorage.removeItem('isLogged');
+    }
+    window.onNavigate('#Login');
 };
 const routerPush = function (hash) {
     history.pushState({}, '', location.origin + hash);
@@ -2734,7 +2924,21 @@ const routerPush = function (hash) {
                 break;
             case '#Login':
                 if (container) {
-                    container.innerHTML = (0,_pages_loginUI__WEBPACK_IMPORTED_MODULE_0__["default"])();
+                    const isLogged = localStorage.getItem('isLogged') === 'yes';
+                    if (isLogged) {
+                        history.pushState({}, '', location.origin + '#Accueil');
+                        container.innerHTML = (0,_pages_photoUI__WEBPACK_IMPORTED_MODULE_5__["default"])();
+                        new _logic_PhotoDisplayLogic__WEBPACK_IMPORTED_MODULE_4__.PhotoDisplayLogic();
+                    }
+                    else {
+                        container.innerHTML = (0,_pages_loginUI__WEBPACK_IMPORTED_MODULE_0__["default"])();
+                        new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
+                    }
+                }
+                break;
+            case '#Register':
+                if (container) {
+                    container.innerHTML = (0,_pages_registerUI__WEBPACK_IMPORTED_MODULE_15__["default"])();
                     new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
                 }
                 break;
@@ -2743,6 +2947,9 @@ const routerPush = function (hash) {
 };
 window.addEventListener('DOMContentLoaded', () => {
     routerPush(window.location.hash || '#Accueil');
+});
+window.addEventListener('popstate', () => {
+    location.reload();
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 

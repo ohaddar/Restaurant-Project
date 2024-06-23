@@ -38,7 +38,7 @@
   margin-left: -27%;
   overflow: hidden;
   animation: slideDown 0.9s ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 #input-section {
   margin-top: 2rem;
