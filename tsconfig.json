@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
     "target": "ES6",
     "module": "ES6",
     "outDir": "./dist",
-    "rootDir": "./src/",
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*", "src/index.ts", 
   "./bmp.d.ts" ,"./gif.d.ts" ,"./jpeg.d.ts" ,"./jpg.d.ts" 

@@ -1,7 +1,7 @@
 import loginUI from './pages/loginUI';
 import { LoginBusinessLogic } from './logic/LoginBusinessLogic';
 import './css/style.css';
-import navBarUI from './pages/navBarUI';
+import navBarUI from './ts/layouts/navBarUI';
 import { PhotoDisplayLogic } from './logic/PhotoDisplayLogic';
 import photoUI from './pages/photoUI';
 import pizzaUI from './pages/pizzaUI';
@@ -12,6 +12,7 @@ import pastaUI from './pages/pastaUI';
 import { PastaDisplayLogic } from './logic/PastaDisplayLogic';
 import { DessertDisplayLogic } from './logic/DessertDisplayLogic';
 import dessertUI from './pages/dessertUI';
+import notification from './ts/layouts/notification';
 
 window.addEventListener('DOMContentLoaded', () => {
   const photoDessertContainer: HTMLElement | null = document.getElementById(
@@ -75,10 +76,14 @@ window.onNavigate = function (hash) {
 
 const routerPush = function (hash: string) {
   history.pushState({}, '', location.origin + hash);
-  console.log('value de hash in routerPush', hash);
   const container: HTMLElement | null = document.getElementById('container');
+
   if (container) {
     container.innerHTML = '';
+
+    container.innerHTML += notification();
+    document.body.insertAdjacentHTML('beforeend', notification());
+
     switch (hash) {
       case '#Accueil':
         if (container) {
@@ -121,7 +126,6 @@ const routerPush = function (hash: string) {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log("démarrage de l'application");
   routerPush(window.location.hash || '#Accueil');
 });
 

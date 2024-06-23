@@ -8,6 +8,14 @@
   background-blend-mode: color;
   background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');
 }
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 #login-container {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
@@ -29,6 +37,8 @@
   margin-top: 40%;
   margin-left: -27%;
   overflow: hidden;
+  animation: slideDown 0.9s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 #input-section {
   margin-top: 2rem;

@@ -3,6 +3,8 @@ import navBarForm from '../ts/components/navBarForm';
 import { FormData } from '../types/type';
 import homeIcon from './images/icons/home.png';
 import eatIcon from './images/icons/eat.png';
+import NotificationService from '../ts/services/NotificationService';
+import AuthService from '../ts/services/AuthServics';
 export class LoginBusinessLogic {
   data: FormData;
   navBarData: FormData;
@@ -84,15 +86,39 @@ export class LoginBusinessLogic {
     }
   }
 
-  onSubmit(e: Event) {
+  async onSubmit(e: Event) {
     e.preventDefault();
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
-    const formValues = Array.from(formData.values());
+    const email = formData.get('email') as string;
+    const password = formData.get('password') as string;
 
-    console.log([...formValues, ...[]]);
-    window.location.href = '/src/html/login.html';
+    if (!email || !password) {
+      new NotificationService().setMessage(
+        'Email ou Mot de passe oublié',
+        'negative'
+      );
+    }
+    const isLoggedIn = await AuthService.login({
+      email: email,
+      password: password,
+    });
+
+    if (isLoggedIn) {
+      new NotificationService().setMessage(
+        '<span>Connexion réussie 🎉\n</span><span>Bienvenue ' +
+          email.split('@')[0].charAt(0).toUpperCase() +
+          password.split('@')[0].slice(1).toLowerCase() +
+          '</span>',
+        'positive'
+      );
+    } else {
+      new NotificationService().setMessage(
+        '❌ Informations incorrectes',
+        'negative'
+      );
+    }
   }
 
   onReset(e: Event) {

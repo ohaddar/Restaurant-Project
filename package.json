@@ -10,7 +10,6 @@
     "build": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,html,json,md}\""
-
   },
   "keywords": [],
   "author": "Oumaima HADDAR",
@@ -21,6 +20,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.0",
     "http-server": "^14.1.1",
+    "json-loader": "^0.5.7",
     "prettier": "^3.3.2",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",

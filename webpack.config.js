@@ -20,14 +20,10 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/,
         type: 'asset/resource',
       },
-      {
-        test: /\.mp4$/,
-        type: 'asset/resource',
-      },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
+    extensions: ['.ts', '.js', '.json'],
   },
   output: {
     filename: '[name].bundle.js',
@@ -40,6 +36,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
+        { from: 'src/ts/data-sources/users.json', to: 'data/users.json' },
         {
           from: 'src/css/style.css',
           to: 'css/style.css',
@@ -71,6 +68,10 @@ module.exports = {
         {
           from: 'src/css/page/photoPg.css',
           to: 'css/page/photoPg.css',
+        },
+        {
+          from: 'src/css/layouts/notification.css',
+          to: 'css/layouts/notification.css',
         },
       ],
     }),

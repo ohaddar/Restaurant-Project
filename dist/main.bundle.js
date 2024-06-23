@@ -52,6 +52,7 @@ figure {
   padding: 0;
   margin: 0;
 }
+
 #photo-main,
 #photo-pizza-main,
 #photo-salade-main,
@@ -60,34 +61,20 @@ figure {
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
-  padding-top: 150px;
+  padding-top: 93px;
   display: flex;
   flex-direction: column;
+  animation: moveBackground 50s linear infinite;
 }
-
-#navBar-container {
-  background-color: aquamarine;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8vh;
-  box-shadow: 0 0 5px rgb(0, 0, 0);
-  z-index: 10;
-  top: -8vh;
-  animation: slideDown 0.5ms ease-in-out forwards;
-  animation-delay: 0.5ms;
-}
-
-@keyframes slideDown {
+@keyframes moveBackground {
   from {
-    top: -8vh;
+    background-position: 0 0;
   }
   to {
-    top: 0;
+    background-position: 100% 100%;
   }
 }
-`, "",{"version":3,"sources":["webpack://./src/css/base/base.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,SAAS;AACX;AACA;;EAEE,UAAU;EACV,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,SAAS;AACX;AACA;;;;;EAKE,yDAAqE;EACrE,oCAAoC;EACpC,4BAA4B;EAC5B,kBAAkB;EAClB,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,4BAA4B;EAC5B,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,gCAAgC;EAChC,WAAW;EACX,SAAS;EACT,+CAA+C;EAC/C,sBAAsB;AACxB;;AAEA;EACE;IACE,SAAS;EACX;EACA;IACE,MAAM;EACR;AACF","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-family: 'Poppins' sans-serif;\n}\n\nbody {\n  margin: 0;\n}\nul,\nli {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\nimg {\n  object-fit: cover;\n}\n\nfigure {\n  padding: 0;\n  margin: 0;\n}\n#photo-main,\n#photo-pizza-main,\n#photo-salade-main,\n#photo-pasta-main,\n#photo-dessert-main {\n  background-image: url('../../logic/images/restaurent/restaurant.jpg');\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 150px;\n  display: flex;\n  flex-direction: column;\n}\n\n#navBar-container {\n  background-color: aquamarine;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 8vh;\n  box-shadow: 0 0 5px rgb(0, 0, 0);\n  z-index: 10;\n  top: -8vh;\n  animation: slideDown 0.5ms ease-in-out forwards;\n  animation-delay: 0.5ms;\n}\n\n@keyframes slideDown {\n  from {\n    top: -8vh;\n  }\n  to {\n    top: 0;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/css/base/base.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;AACnC;;AAEA;EACE,SAAS;AACX;AACA;;EAEE,UAAU;EACV,SAAS;EACT,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,UAAU;EACV,SAAS;AACX;;AAEA;;;;;EAKE,yDAAqE;EACrE,oCAAoC;EACpC,4BAA4B;EAC5B,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,6CAA6C;AAC/C;AACA;EACE;IACE,wBAAwB;EAC1B;EACA;IACE,8BAA8B;EAChC;AACF","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-family: 'Poppins' sans-serif;\n}\n\nbody {\n  margin: 0;\n}\nul,\nli {\n  padding: 0;\n  margin: 0;\n  list-style: none;\n}\n\nimg {\n  object-fit: cover;\n}\n\nfigure {\n  padding: 0;\n  margin: 0;\n}\n\n#photo-main,\n#photo-pizza-main,\n#photo-salade-main,\n#photo-pasta-main,\n#photo-dessert-main {\n  background-image: url('../../logic/images/restaurent/restaurant.jpg');\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 93px;\n  display: flex;\n  flex-direction: column;\n  animation: moveBackground 50s linear infinite;\n}\n@keyframes moveBackground {\n  from {\n    background-position: 0 0;\n  }\n  to {\n    background-position: 100% 100%;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -247,7 +234,71 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#navBar {
   display: flex;
   justify-content: space-between;
 }
-`, "",{"version":3,"sources":["webpack://./src/css/layouts/navBr.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,8BAA8B;AAChC","sourcesContent":["#navBar {\n  display: flex;\n  justify-content: space-between;\n}\n"],"sourceRoot":""}]);
+#navBar-container {
+  background-color: #1abc9c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8vh;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  z-index: 10;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/layouts/navBr.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,8BAA8B;AAChC;AACA;EACE,yBAAyB;EACzB,eAAe;EACf,MAAM;EACN,OAAO;EACP,QAAQ;EACR,WAAW;EACX,gCAAgC;EAChC,WAAW;AACb","sourcesContent":["#navBar {\n  display: flex;\n  justify-content: space-between;\n}\n#navBar-container {\n  background-color: #1abc9c;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 8vh;\n  box-shadow: 0 0 5px rgb(0, 0, 0);\n  z-index: 10;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/notification.css":
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/layouts/notification.css ***!
+  \********************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.notification {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+
+.notification-animation {
+  opacity: 0;
+  animation: show-right 1000ms ease-in-out forwards;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notification-animation--positive {
+  background-color: rgb(67, 187, 127);
+}
+
+.notification-animation--negative {
+  background-color: rgb(254, 156, 145);
+}
+`, "",{"version":3,"sources":["webpack://./src/css/layouts/notification.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,YAAY;EACZ,UAAU;EACV,WAAW;EACX,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,iDAAiD;EACjD,YAAY;EACZ,WAAW;EACX,iBAAiB;EACjB,mBAAmB;EACnB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,mCAAmC;AACrC;;AAEA;EACE,oCAAoC;AACtC","sourcesContent":[".notification {\n  position: fixed;\n  bottom: 10px;\n  left: 20px;\n  z-index: 20;\n  display: flex;\n  align-items: center;\n}\n\n.notification-animation {\n  opacity: 0;\n  animation: show-right 1000ms ease-in-out forwards;\n  padding: 5px;\n  color: #fff;\n  font-weight: bold;\n  border-radius: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.notification-animation--positive {\n  background-color: rgb(67, 187, 127);\n}\n\n.notification-animation--negative {\n  background-color: rgb(254, 156, 145);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -288,6 +339,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login__main {
   background-blend-mode: color;
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
 }
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 #login-container {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: color;
@@ -309,6 +368,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login__main {
   margin-top: 40%;
   margin-left: -27%;
   overflow: hidden;
+  animation: slideDown 0.9s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 #input-section {
   margin-top: 2rem;
@@ -320,7 +381,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.login__main {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-`, "",{"version":3,"sources":["webpack://./src/css/page/login.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,oCAAoC;EACpC,4BAA4B;EAC5B,yDAA4E;AAC9E;AACA;EACE,oCAAoC;EACpC,4BAA4B;EAC5B,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;EACnB,uCAAuC;EACvC,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;AAClB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,UAAU;EACV,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB","sourcesContent":[".login__main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  padding-bottom: 30%;\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');\n}\n#login-container {\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 10%;\n  display: flex;\n  flex-direction: column;\n}\n#login-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #877e7e;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  width: 165%;\n  align-self: center;\n  margin-top: 40%;\n  margin-left: -27%;\n  overflow: hidden;\n}\n#input-section {\n  margin-top: 2rem;\n}\n#button-section {\n  display: flex;\n  width: 61%;\n  margin-left: -1rem;\n  margin-top: 2rem;\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/css/page/login.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,oCAAoC;EACpC,4BAA4B;EAC5B,yDAA4E;AAC9E;AACA;EACE;IACE,4BAA4B;EAC9B;EACA;IACE,wBAAwB;EAC1B;AACF;AACA;EACE,oCAAoC;EACpC,4BAA4B;EAC5B,gBAAgB;EAChB,aAAa;EACb,sBAAsB;AACxB;AACA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,sBAAsB;EACtB,kBAAkB;EAClB,mBAAmB;EACnB,uCAAuC;EACvC,WAAW;EACX,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,gBAAgB;EAChB,8CAA8C;EAC9C,qBAAqB;AACvB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,aAAa;EACb,UAAU;EACV,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;AACrB","sourcesContent":[".login__main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  padding-bottom: 30%;\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  background-image: url('../../../src/logic/images/restaurent/restaurant.jpg');\n}\n@keyframes slideDown {\n  from {\n    transform: translateY(-100%);\n  }\n  to {\n    transform: translateY(0);\n  }\n}\n#login-container {\n  background-color: rgba(0, 0, 0, 0.5);\n  background-blend-mode: color;\n  padding-top: 10%;\n  display: flex;\n  flex-direction: column;\n}\n#login-form {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background: #877e7e;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n  width: 165%;\n  align-self: center;\n  margin-top: 40%;\n  margin-left: -27%;\n  overflow: hidden;\n  animation: slideDown 0.9s ease-in-out forwards;\n  animation-delay: 0.5s;\n}\n#input-section {\n  margin-top: 2rem;\n}\n#button-section {\n  display: flex;\n  width: 61%;\n  margin-left: -1rem;\n  margin-top: 2rem;\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -464,7 +525,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_layouts_navBr_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./layouts/navBr.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/navBr.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_login_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/login.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/login.css");
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./page/photoPg.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/page/photoPg.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_layouts_notification_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./layouts/notification.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/layouts/notification.css");
 // Imports
+
 
 
 
@@ -482,6 +545,7 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_components_navbar
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_layouts_navBr_css__WEBPACK_IMPORTED_MODULE_6__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_login_css__WEBPACK_IMPORTED_MODULE_7__["default"]);
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_page_photoPg_css__WEBPACK_IMPORTED_MODULE_8__["default"]);
+___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_layouts_notification_css__WEBPACK_IMPORTED_MODULE_9__["default"]);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `
 `, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
@@ -1079,6 +1143,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ts_components_navBarForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ts/components/navBarForm */ "./src/ts/components/navBarForm.ts");
 /* harmony import */ var _images_icons_home_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/icons/home.png */ "./src/logic/images/icons/home.png");
 /* harmony import */ var _images_icons_eat_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/icons/eat.png */ "./src/logic/images/icons/eat.png");
+/* harmony import */ var _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ts/services/NotificationService */ "./src/ts/services/NotificationService.ts");
+/* harmony import */ var _ts_services_AuthServics__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ts/services/AuthServics */ "./src/ts/services/AuthServics.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
 
 
 
@@ -1157,12 +1234,29 @@ class LoginBusinessLogic {
         }
     }
     onSubmit(e) {
-        e.preventDefault();
-        const form = e.target;
-        const formData = new FormData(form);
-        const formValues = Array.from(formData.values());
-        console.log([...formValues, ...[]]);
-        window.location.href = '/src/html/login.html';
+        return __awaiter(this, void 0, void 0, function* () {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const email = formData.get('email');
+            const password = formData.get('password');
+            if (!email || !password) {
+                new _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__["default"]().setMessage('Email ou Mot de passe oublié', 'negative');
+            }
+            const isLoggedIn = yield _ts_services_AuthServics__WEBPACK_IMPORTED_MODULE_5__["default"].login({
+                email: email,
+                password: password,
+            });
+            if (isLoggedIn) {
+                new _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__["default"]().setMessage('<span>Connexion réussie 🎉\n</span><span>Bienvenue ' +
+                    email.split('@')[0].charAt(0).toUpperCase() +
+                    password.split('@')[0].slice(1).toLowerCase() +
+                    '</span>', 'positive');
+            }
+            else {
+                new _ts_services_NotificationService__WEBPACK_IMPORTED_MODULE_4__["default"]().setMessage('❌ Informations incorrectes', 'negative');
+            }
+        });
     }
     onReset(e) {
         const formReset = document.getElementById(this.data.id);
@@ -1487,25 +1581,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ loginUI)
 /* harmony export */ });
 function loginUI() {
-    return ` <main class="login__main" id="login-main"></main>`;
+    return ` <main class="login__main" id="login-main">
+  </main>`;
 }
 
 
 /***/ }),
 
-/***/ "./src/pages/navBarUI.ts":
-/*!*******************************!*\
-  !*** ./src/pages/navBarUI.ts ***!
-  \*******************************/
+/***/ "./src/pages/paragraph.ts":
+/*!********************************!*\
+  !*** ./src/pages/paragraph.ts ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ navBarUI)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function navBarUI() {
-    return `<nav class="navBar__div" id="navBar-div"></nav>`;
-}
+const paragraph = function (className, content) {
+    return `
+          <p class="${className}">${content}</p>
+      
+      `;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (paragraph);
 
 
 /***/ }),
@@ -1826,6 +1925,217 @@ function saladePageForm(PhSalData) {
 
 /***/ }),
 
+/***/ "./src/ts/data-sources/api-data-source.ts":
+/*!************************************************!*\
+  !*** ./src/ts/data-sources/api-data-source.ts ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+class ApiDataSource {
+    static get(url) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const result = yield fetch(url, {
+                method: 'GET',
+            });
+            if (!result.ok) {
+                throw new Error(`HTTP error! status: ${result.status}`);
+            }
+            const jsResult = yield result.json();
+            return jsResult;
+        });
+    }
+    static send(data, method, url) {
+        fetch(url, {
+            method: method,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ApiDataSource);
+
+
+/***/ }),
+
+/***/ "./src/ts/layouts/navBarUI.ts":
+/*!************************************!*\
+  !*** ./src/ts/layouts/navBarUI.ts ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ navBarUI)
+/* harmony export */ });
+function navBarUI() {
+    return `<nav class="navBar__div" id="navBar-div"></nav>`;
+}
+
+
+/***/ }),
+
+/***/ "./src/ts/layouts/notification.ts":
+/*!****************************************!*\
+  !*** ./src/ts/layouts/notification.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const notification = function () {
+    return `
+          <aside class="notification" id="notification">
+          </aside>
+      
+      `;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (notification);
+
+
+/***/ }),
+
+/***/ "./src/ts/services/AuthServics.ts":
+/*!****************************************!*\
+  !*** ./src/ts/services/AuthServics.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _UsersService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UsersService */ "./src/ts/services/UsersService.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+class AuthService {
+    static login(data) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const users = yield _UsersService__WEBPACK_IMPORTED_MODULE_0__["default"].getUsers();
+            if (users.length) {
+                const user = users.find((us) => us.email == data.email);
+                if (user) {
+                    console.log('user', user);
+                    if (user.password == data.password) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+                else {
+                    return false;
+                }
+            }
+            else {
+                return false;
+            }
+        });
+    }
+    static register() {
+        return __awaiter(this, void 0, void 0, function* () { });
+    }
+    static logout() { }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AuthService);
+
+
+/***/ }),
+
+/***/ "./src/ts/services/NotificationService.ts":
+/*!************************************************!*\
+  !*** ./src/ts/services/NotificationService.ts ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _pages_paragraph__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../pages/paragraph */ "./src/pages/paragraph.ts");
+
+class NotificationService {
+    constructor() {
+        this.notifElement = document.getElementById('notification');
+        if (!this.notifElement) {
+            console.error('Notification element not found.');
+        }
+    }
+    setMessage(val, type) {
+        if (this.notifElement) {
+            this.notifElement.innerHTML = (0,_pages_paragraph__WEBPACK_IMPORTED_MODULE_0__["default"])(`notification-animation--${type}`, val);
+        }
+        else {
+            console.error('Notification element not found.');
+        }
+    }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NotificationService);
+
+
+/***/ }),
+
+/***/ "./src/ts/services/UsersService.ts":
+/*!*****************************************!*\
+  !*** ./src/ts/services/UsersService.ts ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _data_sources_api_data_source__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../data-sources/api-data-source */ "./src/ts/data-sources/api-data-source.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+class UsersService {
+    static getUsers() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield _data_sources_api_data_source__WEBPACK_IMPORTED_MODULE_0__["default"].get('data/users.json');
+        });
+    }
+    static getUserById(id) { }
+    static createUser(data) { }
+    static deleteUserById(id) { }
+    static updateUserById(id) { }
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UsersService);
+
+
+/***/ }),
+
 /***/ "./src/logic/images/desserts/cake.jpg":
 /*!********************************************!*\
   !*** ./src/logic/images/desserts/cake.jpg ***!
@@ -2062,7 +2372,7 @@ module.exports = __webpack_require__.p + "c533183b738a3cab19f4.jpg";
   \****************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "b357266551a439a83fd8.jpg";
+module.exports = __webpack_require__.p + "44194a16629fc75cd8ba.jpg";
 
 /***/ }),
 
@@ -2264,7 +2574,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_loginUI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/loginUI */ "./src/pages/loginUI.ts");
 /* harmony import */ var _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logic/LoginBusinessLogic */ "./src/logic/LoginBusinessLogic.ts");
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
-/* harmony import */ var _pages_navBarUI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/navBarUI */ "./src/pages/navBarUI.ts");
+/* harmony import */ var _ts_layouts_navBarUI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ts/layouts/navBarUI */ "./src/ts/layouts/navBarUI.ts");
 /* harmony import */ var _logic_PhotoDisplayLogic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./logic/PhotoDisplayLogic */ "./src/logic/PhotoDisplayLogic.ts");
 /* harmony import */ var _pages_photoUI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/photoUI */ "./src/pages/photoUI.ts");
 /* harmony import */ var _pages_pizzaUI__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/pizzaUI */ "./src/pages/pizzaUI.ts");
@@ -2275,6 +2585,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _logic_PastaDisplayLogic__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./logic/PastaDisplayLogic */ "./src/logic/PastaDisplayLogic.ts");
 /* harmony import */ var _logic_DessertDisplayLogic__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./logic/DessertDisplayLogic */ "./src/logic/DessertDisplayLogic.ts");
 /* harmony import */ var _pages_dessertUI__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/dessertUI */ "./src/pages/dessertUI.ts");
+/* harmony import */ var _ts_layouts_notification__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ts/layouts/notification */ "./src/ts/layouts/notification.ts");
+
 
 
 
@@ -2322,7 +2634,7 @@ window.addEventListener('DOMContentLoaded', () => {
         new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
     }
     if (navBarContainer) {
-        navBarContainer.innerHTML = (0,_pages_navBarUI__WEBPACK_IMPORTED_MODULE_3__["default"])();
+        navBarContainer.innerHTML = (0,_ts_layouts_navBarUI__WEBPACK_IMPORTED_MODULE_3__["default"])();
         new _logic_LoginBusinessLogic__WEBPACK_IMPORTED_MODULE_1__.LoginBusinessLogic();
     }
 });
@@ -2331,10 +2643,11 @@ window.onNavigate = function (hash) {
 };
 const routerPush = function (hash) {
     history.pushState({}, '', location.origin + hash);
-    console.log('value de hash in routerPush', hash);
     const container = document.getElementById('container');
     if (container) {
         container.innerHTML = '';
+        container.innerHTML += (0,_ts_layouts_notification__WEBPACK_IMPORTED_MODULE_14__["default"])();
+        document.body.insertAdjacentHTML('beforeend', (0,_ts_layouts_notification__WEBPACK_IMPORTED_MODULE_14__["default"])());
         switch (hash) {
             case '#Accueil':
                 if (container) {
@@ -2376,7 +2689,6 @@ const routerPush = function (hash) {
     }
 };
 window.addEventListener('DOMContentLoaded', () => {
-    console.log("démarrage de l'application");
     routerPush(window.location.hash || '#Accueil');
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
